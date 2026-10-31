@@ -1,0 +1,1 @@
+const s={subscribeUrl:"https://rxklsjspvwltsixbmqlv.supabase.co/functions/v1/subscribe",turnstileSiteKey:"0x4AAAAAAFm7y59G-Lmgo6Rl",legalBaseUrl:"",gaMeasurementId:"G-BLVT69FTDF"};var e=s;export{s as config,e as default};

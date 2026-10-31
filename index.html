@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Forge: Train Anywhere · Workout plans for any gym, hotel room or home</title>
+  <meta name="description" content="Trainer-style workout plans for any gym, hotel room or home, in one tap. Swap days, re-plan when life changes, and see a 3D you of where you're headed. Coming to iPhone.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/">
+  <!-- Sharing cards (Open Graph, X). Absolute URLs: link previews fetch them from the live site. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/">
+  <meta property="og:title" content="Forge: Train Anywhere">
+  <meta property="og:description" content="A trainer-style plan for any gym, hotel room or home, in one tap. And a 3D you that shows where you're headed.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Train anywhere. See where it takes you. A sample person's 3D body in Forge, now and projected 12 weeks ahead.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Forge: Train Anywhere">
+  <meta name="twitter:description" content="A trainer-style plan for any gym, hotel room or home, in one tap. And a 3D you that shows where you're headed.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta name="twitter:image:alt" content="Train anywhere. See where it takes you. A sample person's 3D body in Forge, now and projected 12 weeks ahead.">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" as="image" href="img/hero-story.webp" fetchpriority="high">
+  <link rel="stylesheet" href="landing.css">
+  <!-- Without JavaScript the waitlist can't send, so a form the build showed (scripts/build-landing.mjs openWaitlist) gives way to a note. -->
+  <noscript><style>.join > :not(.nojs) { display: none !important; } .join .nojs { display: block; }</style></noscript>
+  <script type="module" src="landing.js"></script>
+  <!-- Structured data: the app, its prices (js/data/pro.js is the free / Pro split; prices from ios/App/Forge.storekit),
+       the seller and the FAQ below, word for word. No ratings or reviews: there are none yet. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forgetrainanywhere.com/#org",
+        "name": "Artificial General Intelligence LLC",
+        "url": "https://forgetrainanywhere.com/",
+        "email": "support@forgetrainanywhere.com",
+        "logo": "https://forgetrainanywhere.com/apple-touch-icon.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://forgetrainanywhere.com/#site",
+        "url": "https://forgetrainanywhere.com/",
+        "name": "Forge: Train Anywhere",
+        "publisher": { "@id": "https://forgetrainanywhere.com/#org" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://forgetrainanywhere.com/#app",
+        "name": "Forge: Train Anywhere",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "description": "Trainer-style workout plans for any gym, hotel room or home. Plan 4 or 6 weeks in one tap, swap days, re-plan when life changes, set nutrition targets, and see a 3D projection of where your training is headed.",
+        "image": "https://forgetrainanywhere.com/img/og.png",
+        "url": "https://forgetrainanywhere.com/",
+        "publisher": { "@id": "https://forgetrainanywhere.com/#org" },
+        "offers": [
+          { "@type": "Offer", "name": "Forge", "price": "0", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Forge Pro monthly", "price": "9.99", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Forge Pro yearly (2-week free trial)", "price": "59.99", "priceCurrency": "USD" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://forgetrainanywhere.com/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "When can I get Forge?", "acceptedAnswer": { "@type": "Answer", "text": "Forge is coming to the App Store for iPhone. You can get early access to the beta now: enter your email and we'll send the link, while seats last. Everyone who signs up is also on the launch list and gets an email when Forge launches." } },
+          { "@type": "Question", "name": "Do I need a gym?", "acceptedAnswer": { "@type": "Answer", "text": "No. Tell Forge what's around you, from nothing at all to a full gym, and it builds from that: bodyweight moves in a hotel room, dumbbells at home, machines and cables at the gym. Each place keeps its own equipment." } },
+          { "@type": "Question", "name": "How does Forge plan my workouts?", "acceptedAnswer": { "@type": "Answer", "text": "From your goal, your experience, the muscles you want to focus on, the days and minutes you have, and the equipment where you are. It counts the hard sets each muscle gets each week against a target, suggests more weight once you hit the top of your reps, and plans around what you actually did." } },
+          { "@type": "Question", "name": "Can I change the plan?", "acceptedAnswer": { "@type": "Answer", "text": "Any time. Swap two days, change where you're training and re-suggest, change a workout's minutes or swap an exercise. Change your usual week and re-plan the weeks ahead in one tap. Nothing is locked in." } },
+          { "@type": "Question", "name": "How does the 3D projection work?", "acceptedAnswer": { "@type": "Answer", "text": "Forge builds a 3D body from your measurements and projects it forward from your plan, training, protein and calories. It's an estimate based on published research: it shows a likely range, not a promise, and it updates as you log. Your results will differ." } },
+          { "@type": "Question", "name": "Does it do nutrition, including low-carb and keto?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if you want it. Nutrition is optional. Turn it on for calorie and protein targets for your goal, and choose how much of your calories come from fat, up to 80% for low-carb and keto." } },
+          { "@type": "Question", "name": "What does Forge Pro cost?", "acceptedAnswer": { "@type": "Answer", "text": "$9.99 a month or $59.99 a year in the US. The yearly plan starts with a 2-week free trial for new subscribers. Free to download: the free version has your 3D character in a still pose, workouts and runs you log yourself, the exercise library, tape measurements and the weight log, and 3 one-tap workouts a week. Forge Pro adds the projection, your character in motion, the 3D exercise videos, planning ahead, nutrition and sync." } },
+          { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Your data stays on your phone and Forge works offline. Sync, part of Pro, is end-to-end encrypted: your data is locked on your phone before it's uploaded, so we can't read it. You can export a backup or delete your account any time." } },
+          { "@type": "Question", "name": "Is Forge medical advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. Forge is a training and wellness tool, not medical advice. If you have a health condition or an injury, or you're pregnant, check with your doctor before you start." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#join">Skip to the sign-up</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="#top" aria-label="Forge: Train Anywhere, back to top"><img class="mark" src="icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="cta sm" href="#join" data-focus-join>Get early access</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================================================ hero -->
+    <section class="hero band-dark" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-in wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Forge: Train Anywhere · coming to iPhone</p>
+          <h1 id="hero-title">Train anywhere. <span class="grad">See where it takes you.</span></h1>
+          <p class="lead">Tell Forge your goal and where you are. One tap builds a trainer-style plan for a full gym, a hotel room or your living room, and a 3D you shows where it leads.</p>
+          <p class="invite" data-invite hidden>A friend invited you. Install Forge, then enter <b data-invite-code></b> in Settings → Forge Pro to get your first month of Forge Pro free.</p>
+
+          <div class="join-box" id="join">
+            <h2 class="join-title" data-join-title>Get early access to the Forge beta</h2>
+            <p class="founding" data-beta-only><b>Beta testers get</b> a free month of Forge Pro at launch and limited-edition OG avatar gear that is never made again. Seats are limited. You're also on the launch list.</p>
+            <p class="founding" data-wait-only hidden><b>The beta is full for now.</b> Join the waitlist and we'll email you when Forge launches. Launch day brings a 2-week Pro trial.</p>
+            <form class="join" data-join novalidate>
+              <p class="closed nojs">Turn on JavaScript to sign up.</p>
+              <label for="join-email">Email</label>
+              <input id="join-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false"
+                     placeholder="you@example.com" required aria-describedby="join-consent join-status">
+              <label for="join-year">Birth year</label>
+              <input id="join-year" name="year" type="text" autocomplete="off" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required aria-describedby="join-status">
+              <div class="captcha" data-captcha hidden></div>
+              <button type="submit" class="cta">Get early access</button>
+              <p class="consent" id="join-consent"><span id="join-consent-text">We'll email you the beta link if a seat is open, then Forge launch news and occasional training tips. Unsubscribe any time.</span>
+                <a href="#email-privacy" data-legal="privacy">How we use your email</a></p>
+              <p class="status" id="join-status" role="status" aria-live="polite"></p>
+              <div class="joined-share" data-joined hidden>
+                <p>Know someone who trains on the road?</p>
+                <button type="button" class="cta ghost" data-share>Share Forge</button>
+              </div>
+              <ol class="beta-steps" data-beta-only aria-label="How early access works">
+                <li>Enter your email.</li>
+                <li>We email you the link and instructions.</li>
+                <li>Open it on your iPhone and add it to your Home Screen.</li>
+              </ol>
+            </form>
+            <p class="closed" data-join-closed hidden>Early access opens soon. Check back here.</p>
+          </div>
+          <ul class="hero-points" aria-label="At a glance">
+            <li>Free to download. 2 weeks of Pro free.</li>
+            <li>No equipment needed</li>
+            <li>End-to-end encrypted sync</li>
+          </ul>
+        </div>
+
+        <figure class="stage" aria-labelledby="stage-cap">
+          <div class="stage-frame">
+            <!-- One loop, its text set in the picture (scripts/landing-media/hero_story.py): a made-up woman's two years on
+                 Forge's projection from one still angle, walking, then running once she is lighter, sprinting in year 2. -->
+            <video class="stage-video" data-hero-video data-clip muted loop playsinline preload="none" poster="img/hero-story.webp" width="640" height="800"
+                   data-start="0.35" aria-hidden="true">
+              <source src="img/hero-story.webm" type="video/webm">
+              <source src="img/hero-story.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption id="stage-cap">A sample woman's 3D body over two years of a plan, seen from one angle: fat loss to her goal, lifting four days a week (the 2-year projection is Forge Pro). She walks at first, starts running once she is lighter, and sprints in year 2. A projection, not a promise.</figcaption>
+        </figure>
+      </div>
+
+      <ul class="facts wrap" aria-label="Forge in numbers">
+        <li><b>400+</b><span>exercises with form cues</span></li>
+        <li><b>1 tap</b><span>to plan your week, or 6 with Pro</span></li>
+        <li><b>15–90</b><span>minutes, fitted to your time</span></li>
+        <li><b>0</b><span>equipment needed to start</span></li>
+      </ul>
+    </section>
+
+    <!-- ============================================================ how it works -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="kicker">How it works</p>
+        <h2 id="how-title">Your plan in three steps</h2>
+        <ol class="steps">
+          <li class="step rv">
+            <div class="step-shot"><img src="img/shot-gyms.webp" srcset="img/shot-gyms-360.webp 360w, img/shot-gyms.webp 720w" sizes="(min-width: 900px) 300px, (min-width: 560px) 150px, 112px" width="720" height="1558" alt="Setup step: Where do you train? A full gym and home dumbbells picked, with a hotel room, bands and a park to choose from." loading="lazy" decoding="async"></div>
+            <div class="step-text"><span class="step-n" aria-hidden="true">1</span><h3>Tell it your goal and where you train</h3>
+              <p>Lose fat, build muscle or get stronger. A full gym, dumbbells at home, a hotel room with nothing in it. Two minutes of setup, then Forge knows.</p></div>
+          </li>
+          <li class="step rv">
+            <div class="step-shot" style="--pos: 16%"><img src="img/shot-plan.webp" srcset="img/shot-plan-360.webp 360w, img/shot-plan.webp 720w" sizes="(min-width: 900px) 300px, (min-width: 560px) 150px, 112px" width="720" height="1558" alt="The Plan screen: a weekly schedule, Plan my week, Plan next 4 weeks and Plan next 6 weeks buttons, and the week's targets." loading="lazy" decoding="async"></div>
+            <div class="step-text"><span class="step-n" aria-hidden="true">2</span><h3>One tap builds your plan</h3>
+              <p>Your week, or the next 4 or 6 with Pro, in one tap: every muscle on target each week, rest days in the right places, and weights that go up when you've earned them.</p></div>
+          </li>
+          <li class="step rv">
+            <div class="step-shot"><img src="img/shot-trip.webp" srcset="img/shot-trip-360.webp 360w, img/shot-trip.webp 720w" sizes="(min-width: 900px) 300px, (min-width: 560px) 150px, 112px" width="720" height="1558" alt="The I'm traveling sheet: Taipei hotel, with Hotel room picked from hotel gym, apartment gym, full gym, bands only, park and dumbbell set." loading="lazy" decoding="async"></div>
+            <div class="step-text"><span class="step-n" aria-hidden="true">3</span><h3>Train anywhere. Change anything.</h3>
+              <p>Traveling? Tell Forge where you're staying and it rebuilds around what's there. Swap days, re-suggest a workout, re-plan the month. You're never locked in.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ see it in action -->
+    <section class="demos band-dark" id="demos" aria-labelledby="demos-title">
+      <div class="wrap">
+        <p class="kicker">See it in action</p>
+        <h2 id="demos-title">The real app, a few seconds at a time</h2>
+        <p class="sub">Recorded from the app as it is today, with made-up people. Each clip plays while it is on screen; tap one to pause it.</p>
+        <ul class="clips">
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-plan.webp" width="320" height="692" aria-label="Plan next 4 weeks tapped: lift, cardio and rest days fill in, then the next weeks.">
+              <source src="img/demo-plan.webm" type="video/webm"><source src="img/demo-plan.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">One tap plans the next four weeks <span class="clip-note">Forge Pro</span></p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-hotel.webp" width="320" height="692" aria-label="I'm traveling: a hotel room with no equipment, then a chest and back workout built for it.">
+              <source src="img/demo-hotel.webm" type="video/webm"><source src="img/demo-hotel.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">A workout for a hotel room with nothing in it</p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-swap.webp" width="320" height="692" aria-label="Move to… swaps two lift days; a gym day is re-suggested for a hotel room.">
+              <source src="img/demo-swap.webm" type="video/webm"><source src="img/demo-swap.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">Swap two days. Re-suggest at a new place.</p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-scrub.webp" width="320" height="692" aria-label="The Projection screen's timeline dragged from Now to 12 weeks while a sample woman's 3D body changes.">
+              <source src="img/demo-scrub.webm" type="video/webm"><source src="img/demo-scrub.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">Scrub your 3D body from now to 12 weeks <span class="clip-note">Forge Pro · a projection, not a promise</span></p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-phases.webp" width="320" height="692" aria-label="Nutrition phases: lean-bulk and mini-cut cycles picked, the timeline and chart change.">
+              <source src="img/demo-phases.webm" type="video/webm"><source src="img/demo-phases.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">Plan cuts, lean bulks and recomp phases <span class="clip-note">Forge Pro · a projection, not a promise</span></p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-progress.webp" width="320" height="692" aria-label="Progress: then versus now from logged measurements, then scrubbed ahead into the plan.">
+              <source src="img/demo-progress.webm" type="video/webm"><source src="img/demo-progress.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">Where you started, and where it leads <span class="clip-note">Forge Pro · a projection, not a promise</span></p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-look.webp" width="320" height="692" aria-label="Edit look: curly hair, box braids, a headband and a tank top tried on a live 3D preview.">
+              <source src="img/demo-look.webm" type="video/webm"><source src="img/demo-look.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">Make the 3D body look like you</p>
+          </li>
+          <li class="clip rv">
+            <div class="clip-screen"><video data-clip muted loop playsinline preload="none" poster="img/demo-poses.webp" width="320" height="692" aria-label="Pose chips: a tempo run, bounding and a dumbbell overhead press on the 3D body.">
+              <source src="img/demo-poses.webm" type="video/webm"><source src="img/demo-poses.mp4" type="video/mp4"></video></div>
+            <p class="clip-cap">New moves: running forms, bounding, the press <span class="clip-note">Forge Pro · a projection, not a promise</span></p>
+          </li>
+        </ul>
+        <div class="clip-join rv">
+          <a class="cta" href="#join" data-focus-join>Get early access</a>
+          <p>Beta testers get their first month of Forge Pro free at launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ features -->
+    <div id="features">
+      <section class="feat" aria-labelledby="f-anywhere">
+        <div class="feat-in wrap">
+          <div class="feat-text rv">
+            <p class="kicker">Any gym, hotel room or home</p>
+            <h2 id="f-anywhere">A great workout from whatever's there</h2>
+            <p>Each place keeps its own equipment, from no equipment at all to a full gym. Pick the minutes and the muscles, or let Forge pick what's ready to train, and it builds the workout from what's actually in the room.</p>
+            <ul class="ticks">
+              <li>Hotel room, hotel gym, apartment gym, park, bands or a full gym</li>
+              <li>15 to 90 minutes, fitted to the time you have</li>
+              <li>400+ exercises, each with form cues and alternatives</li>
+              <li>A trip drops off on its own after your last day</li>
+            </ul>
+          </div>
+          <div class="phones two rv" role="group" aria-label="Screens: a 30-minute workout built for a hotel room">
+            <figure class="phone"><img src="img/shot-today.webp" srcset="img/shot-today-360.webp 360w, img/shot-today.webp 720w" sizes="(min-width: 900px) 260px, (min-width: 560px) 290px, 44vw" width="720" height="1558" alt="Today at Taipei hotel: Good morning, Sam, with gym, muscle and minute choices to build a workout." loading="lazy" decoding="async"></figure>
+            <figure class="phone"><img src="img/shot-hotel-workout.webp" srcset="img/shot-hotel-workout-360.webp 360w, img/shot-hotel-workout.webp 720w" sizes="(min-width: 900px) 260px, (min-width: 560px) 290px, 44vw" width="720" height="1558" alt="A 30-minute chest and back workout built for a hotel room with no equipment: door-frame rows, deficit and decline push-ups, and a cobra hold, with sets, reps and rest." loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feat band-dark proj" aria-labelledby="f-proj">
+        <div class="feat-in wrap flip">
+          <div class="feat-text rv">
+            <p class="kicker">See where you're headed</p>
+            <h2 id="f-proj">Meet the you that keeps it up</h2>
+            <p>Forge builds a 3D body from your measurements, then projects it forward from your plan, your training and your food. It's motivating to see where four, eight or twelve weeks takes you, and to watch the real thing catch up.</p>
+            <ul class="ticks">
+              <li>12 weeks ahead, up to 8 years, with Forge Pro</li>
+              <li>A likely range from published research, not a promise</li>
+              <li>Updates every time you log a workout, a weigh-in or the tape</li>
+              <li>Make a turning video or a before / after to share</li>
+            </ul>
+          </div>
+          <figure class="proj-clip rv" aria-labelledby="proj-cap">
+            <div class="proj-frame"><video data-clip muted loop playsinline preload="none" poster="img/story-dan.webp" width="640" height="800" data-start="0.35"
+                   aria-label="A sample man's 3D body seen from the front over five years of a plan, from 300 lb through fat loss, two lean bulks and a cut, then pressing a pair of dumbbells.">
+              <source src="img/story-dan.webm" type="video/webm"><source src="img/story-dan.mp4" type="video/mp4"></video></div>
+            <figcaption id="proj-cap">Sample person, five years on one plan: fat loss, two lean bulks and a cut (Forge Pro). A projection, not a promise.</figcaption>
+          </figure>
+          <div class="clip-join rv">
+            <a class="cta" href="#join" data-focus-join>Get early access</a>
+            <p>Beta testers get their first month of Forge Pro free at launch.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feat" aria-labelledby="f-food">
+        <div class="feat-in wrap">
+          <div class="feat-text rv">
+            <p class="kicker">Nutrition targets</p>
+            <h2 id="f-food">Eat for the plan, your way</h2>
+            <p>Turn on nutrition and Forge sets calorie and protein targets for your goal from your weight and the week's training. Choose how much comes from fat, from balanced to low-carb and keto at up to 80% of calories.</p>
+            <ul class="ticks">
+              <li>Optional: training works without it</li>
+              <li>Targets move with your weight</li>
+              <li>Carb cycling and the Nutrition Lab with Pro</li>
+            </ul>
+          </div>
+          <div class="phones one rv"><figure class="phone"><img src="img/shot-nutrition.webp" srcset="img/shot-nutrition-360.webp 360w, img/shot-nutrition.webp 720w" sizes="(min-width: 560px) 300px, 64vw" width="720" height="1558" alt="Nutrition with Simple targets: a calorie baseline, the daily calorie target, protein per pound and the share of calories from fat." loading="lazy" decoding="async"></figure></div>
+        </div>
+      </section>
+
+      <section class="feat alt" aria-labelledby="f-week">
+        <div class="feat-in wrap flip">
+          <div class="feat-text rv">
+            <p class="kicker">Weekly schedule</p>
+            <h2 id="f-week">Your week, your way. Never locked in.</h2>
+            <p>Set what a normal week looks like: which days you lift, do cardio or rest, for how long and where. Forge Pro plans this week, or the next 4 or 6, in one tap. When life changes, change the plan.</p>
+            <ul class="ticks">
+              <li>Swap two days with Move to…</li>
+              <li>Change where you are and re-suggest</li>
+              <li>Change your usual week and re-plan the weeks ahead at once</li>
+            </ul>
+          </div>
+          <div class="phones two rv" role="group" aria-label="Screens: the weekly schedule and the planned days">
+            <figure class="phone"><img src="img/shot-schedule.webp" srcset="img/shot-schedule-360.webp 360w, img/shot-schedule.webp 720w" sizes="(min-width: 900px) 260px, (min-width: 560px) 290px, 44vw" width="720" height="1558" alt="Weekly schedule: each day set to lift, cardio, class, flex or rest, with minutes and gym." loading="lazy" decoding="async"></figure>
+            <figure class="phone"><img src="img/shot-plan-days.webp" srcset="img/shot-plan-days-360.webp 360w, img/shot-plan-days.webp 720w" sizes="(min-width: 900px) 260px, (min-width: 560px) 290px, 44vw" width="720" height="1558" alt="Planned days: Shoulders and Arms today, a tempo run Tuesday, Chest and Back Wednesday, a rest day Thursday and Legs Friday." loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feat" aria-labelledby="f-progress">
+        <div class="feat-in wrap">
+          <div class="feat-text rv">
+            <p class="kicker">Progress over time</p>
+            <h2 id="f-progress">See how far you've come</h2>
+            <p>Every workout, weigh-in and tape measurement adds to your history. Forge tracks the weekly sets each muscle gets against its target and how recovered it is, and your 3D body changes as your numbers do.</p>
+            <ul class="ticks">
+              <li>A calendar of everything you've done</li>
+              <li>Weekly sets and recovery for every muscle</li>
+              <li>Last time's sets beside today's target</li>
+            </ul>
+          </div>
+          <div class="phones two rv" role="group" aria-label="Screens: history and weekly sets">
+            <figure class="phone"><img src="img/shot-history.webp" srcset="img/shot-history-360.webp 360w, img/shot-history.webp 720w" sizes="(min-width: 900px) 260px, (min-width: 560px) 290px, 44vw" width="720" height="1558" alt="History: a calendar of the last month's lifting and cardio days, with this week's and last week's sessions listed." loading="lazy" decoding="async"></figure>
+            <figure class="phone"><img src="img/shot-body-sets.webp" srcset="img/shot-body-sets-360.webp 360w, img/shot-body-sets.webp 720w" sizes="(min-width: 900px) 260px, (min-width: 560px) 290px, 44vw" width="720" height="1558" alt="Weekly sets vs target: a bar for each muscle showing sets done and planned against its weekly target." loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================================ founder -->
+    <section class="story band-dark" aria-labelledby="story-title">
+      <div class="wrap story-in">
+        <p class="kicker">Why Forge exists</p>
+        <h2 id="story-title" class="sr">Why Forge exists</h2>
+        <blockquote class="rv">
+          <p class="pull">“It's motivating to see a 3D model of yourself looking good. It makes you want to do it.”</p>
+          <p>I train in different places. If I'm in Taiwan, I might only have a hotel room, but I still want my workout in, the right calories, and to see what I'll look like if I keep doing this workout and eating this food for four weeks or more.</p>
+          <p>I wanted to plan an ideal workout in any environment, weeks ahead, with the click of a button, and change it when I move. That's Forge. It knows your goals, anybody can use it, and it's fun, because you watch a 3D you get better and better.</p>
+          <footer>The founder of Forge</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============================================================ founder: his body now, and three years on his plan -->
+    <section class="story founder band-dark" aria-labelledby="founder-title">
+      <div class="wrap founder-in">
+        <div class="founder-top">
+          <div class="founder-bio">
+            <p class="kicker">Meet the founder</p>
+            <h2 id="founder-title">Science-first training, built by a 2:30 marathoner</h2>
+            <p>I'm Bob. My first marathon took 3:58. I went deep into the physiology and the research, coached myself with periodized training, and got to 2:30: eight marathons under three hours, the fastest Texan at Boston in 2021, and a spot in the American Development Program at Chicago in 2022. I did it as a dad of three with a sales job that keeps me on the road, so every session had to count.</p>
+            <p>At 39 I'm putting the same science-first, periodized approach into strength, for health and the long run. Forge is how I train now: hotel gyms, early mornings, whatever time I've got. I'm still a marathoner at heart and I love coaching runners. Now we get to do this part together.</p>
+            <p class="founder-next">Next up: race plans that fit around your lifting.</p>
+          </div>
+          <!-- founder-photos:start (his race photos: hold back until he confirms he can use them commercially; docs/features/landing-page.md) -->
+          <div class="founder-photos">
+            <figure><img src="img/founder-boston.webp" width="480" height="720" alt="Bob running the 2021 Boston Marathon in a gold and red singlet, a tan cap and green sunglasses." loading="lazy" decoding="async"><figcaption>Boston 2021: fastest Texan finisher</figcaption></figure>
+            <figure><img src="img/founder-chicago.webp" width="480" height="720" alt="Bob running the 2022 Chicago Marathon in a blue and yellow singlet, a white cap and orange sunglasses." loading="lazy" decoding="async"><figcaption>Chicago 2022: American Development Program</figcaption></figure>
+          </div>
+          <!-- founder-photos:end -->
+        </div>
+        <div class="founder-pair">
+          <figure class="proj-clip rv" aria-labelledby="founder-now-tag">
+            <p class="founder-tag" id="founder-now-tag">Me now</p>
+            <div class="proj-frame"><video data-clip muted loop playsinline preload="none" poster="img/founder-now.webp" width="576" height="720"
+                   aria-label="Bob's 3D avatar today, standing at ease, then flexing, and back.">
+              <source src="img/founder-now.webm" type="video/webm"><source src="img/founder-now.mp4" type="video/mp4"></video></div>
+          </figure>
+          <figure class="proj-clip rv" aria-labelledby="founder-3y-tag">
+            <p class="founder-tag" id="founder-3y-tag">Me in 3 years, on my plan</p>
+            <div class="proj-frame"><video data-clip muted loop playsinline preload="none" poster="img/founder-3y.webp" width="576" height="720"
+                   aria-label="Bob's 3D avatar projected three years ahead on his current plan, standing at ease, then flexing, and back.">
+              <source src="img/founder-3y.webm" type="video/webm"><source src="img/founder-3y.mp4" type="video/mp4"></video></div>
+          </figure>
+        </div>
+        <p class="founder-cap" id="founder-cap">Forge Pro · A projection, not a promise.</p>
+        <div class="clip-join rv">
+          <a class="cta" href="#join" data-focus-join>Get early access</a>
+          <p>Beta testers get their first month of Forge Pro free at launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ privacy -->
+    <section class="privacy" id="privacy" aria-labelledby="priv-title">
+      <div class="wrap">
+        <p class="kicker">Privacy</p>
+        <h2 id="priv-title">Your body. Your data. Yours.</h2>
+        <ul class="cards3">
+          <li class="card rv"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+            <h3>On your phone first</h3><p>Forge works offline and keeps your data on your phone. Nothing leaves it unless you turn on sync.</p></li>
+          <li class="card rv"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></svg>
+            <h3>End-to-end encrypted sync</h3><p>With Pro, your data is locked on your phone before it's uploaded, with a key made from your password. We can't read it.</p></li>
+          <li class="card rv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11"/><path d="M7.5 9.5 12 14l4.5-4.5"/><path d="M4.5 16.5v2a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-2"/></svg>
+            <h3>You own it</h3><p>Export a backup any time, or delete your account from inside the app. No ads, and we never sell your data.</p></li>
+        </ul>
+        <p class="email-note rv" id="email-privacy"><b>Getting early access?</b> We use your email only for Forge: to send the beta link and
+          instructions, a message to confirm your address, then launch news and the occasional training tip (those have an
+          unsubscribe link). The beta needs an account, so sign-ups here are for ages 13 and up. We don't sell your information.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================ pricing -->
+    <section class="pricing" id="pricing" aria-labelledby="price-title">
+      <div class="wrap">
+        <p class="kicker">Pricing</p>
+        <h2 id="price-title">Start free. Go Pro when you're ready.</h2>
+        <div class="plans">
+          <article class="plan rv" aria-labelledby="plan-free">
+            <h3 id="plan-free">Free</h3>
+            <p class="price"><b>$0</b></p>
+            <p class="per">Log your training, for good</p>
+            <ul class="ticks" data-free-list>
+              <li>Your 3D character in a still pose, and you can customise it</li>
+              <li>Workouts and runs you log yourself</li>
+              <li>400+ exercises with form cues</li>
+              <li>Tape measurements and the weight log</li>
+              <li>3 one-tap workouts a week</li>
+            </ul>
+          </article>
+          <article class="plan pro rv" aria-labelledby="plan-pro">
+            <p class="badge">2-week free trial</p>
+            <h3 id="plan-pro">Forge Pro</h3>
+            <p class="price"><b>$59.99</b><span>/year</span></p>
+            <p class="per">About $5 a month, or $9.99 monthly</p>
+            <ul class="ticks" data-pro-list>
+              <li>Your character in motion, and every exercise in 3D</li>
+              <li>See your body in 12 weeks, and up to 8 years ahead</li>
+              <li>Unlimited one-tap workouts, every style and place</li>
+              <li>Plan your week, and weeks ahead</li>
+              <li>Calorie and protein targets, carb cycling, the Nutrition Lab</li>
+              <li>Share video, import runs, sync your devices</li>
+            </ul>
+          </article>
+        </div>
+        <div class="store-note rv">
+          <p><b>App Store coming soon.</b> Get early access to the beta now and we'll email you when Forge launches. Beta testers get a code for their first month of Forge Pro free; everyone else gets the 2-week free trial.</p>
+          <a class="cta" href="#join" data-focus-join>Get early access</a>
+        </div>
+        <p class="fine">US prices. Payment is through your Apple ID and subscriptions renew until you cancel. The free trial is for new subscribers on the yearly plan. The beta testers' offer is a one-month Forge Pro code emailed to the people in the beta at launch, to redeem in the App Store for a limited time; after the free month it renews at the normal price unless you cancel.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================ FAQ (mirrored in the structured data above) -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <p class="kicker">FAQ</p>
+        <h2 id="faq-title">Questions</h2>
+        <div class="qa" data-faq>
+          <details><summary>When can I get Forge?</summary><p>Forge is coming to the App Store for iPhone. You can get early access to the beta now: enter your email and we'll send the link, while seats last. Everyone who signs up is also on the launch list and gets an email when Forge launches.</p></details>
+          <details><summary>Do I need a gym?</summary><p>No. Tell Forge what's around you, from nothing at all to a full gym, and it builds from that: bodyweight moves in a hotel room, dumbbells at home, machines and cables at the gym. Each place keeps its own equipment.</p></details>
+          <details><summary>How does Forge plan my workouts?</summary><p>From your goal, your experience, the muscles you want to focus on, the days and minutes you have, and the equipment where you are. It counts the hard sets each muscle gets each week against a target, suggests more weight once you hit the top of your reps, and plans around what you actually did.</p></details>
+          <details><summary>Can I change the plan?</summary><p>Any time. Swap two days, change where you're training and re-suggest, change a workout's minutes or swap an exercise. Change your usual week and re-plan the weeks ahead in one tap. Nothing is locked in.</p></details>
+          <details><summary>How does the 3D projection work?</summary><p>Forge builds a 3D body from your measurements and projects it forward from your plan, training, protein and calories. It's an estimate based on published research: it shows a likely range, not a promise, and it updates as you log. Your results will differ.</p></details>
+          <details><summary>Does it do nutrition, including low-carb and keto?</summary><p>Yes, if you want it. Nutrition is optional. Turn it on for calorie and protein targets for your goal, and choose how much of your calories come from fat, up to 80% for low-carb and keto.</p></details>
+          <details><summary>What does Forge Pro cost?</summary><p>$9.99 a month or $59.99 a year in the US. The yearly plan starts with a 2-week free trial for new subscribers. Free to download: the free version has your 3D character in a still pose, workouts and runs you log yourself, the exercise library, tape measurements and the weight log, and 3 one-tap workouts a week. Forge Pro adds the projection, your character in motion, the 3D exercise videos, planning ahead, nutrition and sync.</p></details>
+          <details><summary>Is my data private?</summary><p>Your data stays on your phone and Forge works offline. Sync, part of Pro, is end-to-end encrypted: your data is locked on your phone before it's uploaded, so we can't read it. You can export a backup or delete your account any time.</p></details>
+          <details><summary>Is Forge medical advice?</summary><p>No. Forge is a training and wellness tool, not medical advice. If you have a health condition or an injury, or you're pregnant, check with your doctor before you start.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ last call -->
+    <section class="last band-dark" aria-labelledby="last-title">
+      <div class="wrap last-in">
+        <img class="last-mark" src="icon.svg" alt="" width="72" height="72" loading="lazy">
+        <h2 id="last-title">Your next workout is wherever you are.</h2>
+        <p>Be first in line when Forge comes to the App Store.</p>
+        <div class="last-acts">
+          <a class="cta" href="#join" data-focus-join>Get early access</a>
+          <button type="button" class="cta ghost" data-share>Share Forge</button>
+        </div>
+        <p class="status share-status" data-share-status role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="#top"><img class="mark" src="icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="#privacy" data-legal="privacy">Privacy</a>
+        <a href="#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. Screens show a sample person; projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+</body>
+</html>
