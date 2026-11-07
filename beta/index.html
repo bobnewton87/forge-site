@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Join the Forge beta · Forge: Train Anywhere</title>
+  <meta name="description" content="Bob's invite to the Forge beta: a workout built wherever you are in a couple of taps, and a 3D you of where you're headed. Free to join. iPhone sign-ups get Apple's TestFlight invite by email.">
+  <!-- An invite page people reach from a link, not from search: noindex, and not in sitemap.xml (docs/features/beta.md "The beta page"). Link previews still work. -->
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/beta/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/beta/">
+  <meta property="og:title" content="Join the Forge beta">
+  <meta property="og:description" content="A workout built wherever you are in a couple of taps, and a 3D you of where you're headed. Free to join.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Join the Forge beta">
+  <meta name="twitter:description" content="A workout built wherever you are in a couple of taps, and a 3D you of where you're headed. Free to join.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" as="image" href="/img/beta-short.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/beta.css">
+  <noscript><style>.join > :not(.nojs) { display: none !important; } .join .nojs { display: block; }</style></noscript>
+  <script type="module" src="/beta.js"></script>
+</head>
+<body>
+  <a class="skip" href="#join">Skip to the sign-up</a>
+
+  <header class="nav">
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <a class="cta sm" href="#join" data-focus-join>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================================================ Bob's videos (one player) and the form -->
+    <section class="hero band-dark bt-hero" aria-labelledby="bt-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-in wrap bt-in">
+        <div class="bt-video">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Forge: Train Anywhere · beta</p>
+          <h1 id="bt-title">Help me test <span class="grad">Forge.</span></h1>
+          <p class="lead">A note from Bob, who built it. 38 seconds.</p>
+          <div class="bt-player" data-player>
+            <video data-bt-video playsinline preload="none" poster="/img/beta-short.webp" src="/img/beta-short.mp4" width="720" height="1280" aria-label="Bob Newton explains the Forge beta (captions are in the video)"></video>
+            <button type="button" class="bt-play" data-bt-play aria-label="Play with sound"><span class="bt-play-dot" aria-hidden="true"></span><span class="bt-play-text">Tap to play with sound</span></button>
+            <!-- after the short video: three seconds, then the full story plays in this same player (beta.js; the long file is not requested before this) -->
+            <div class="bt-next" data-bt-next hidden role="group" aria-label="Keep watching">
+              <p class="bt-next-text">Keep watching: the full story <span>(2:58)</span></p>
+              <div class="bt-next-bar" aria-hidden="true"><i></i></div>
+              <div class="bt-next-acts">
+                <a class="cta" href="#join" data-focus-join data-bt-next-join>Join the beta</a>
+                <button type="button" class="cta ghost" data-bt-skip>Not now</button>
+              </div>
+            </div>
+          </div>
+          <p class="bt-more" data-bt-more hidden><button type="button" class="bt-link" data-bt-long>Watch the full story (2:58)</button></p>
+        </div>
+
+        <div class="join-box bt-join" id="join">
+          <h2 class="join-title">Join the Forge beta</h2>
+          <p class="founding"><b>It's free.</b> Beta testers get a free month of Forge Strength at launch and limited-edition OG avatar gear that is never made again. Seats are limited. You're also on the launch list.</p>
+          <form class="join" data-join novalidate>
+            <p class="closed nojs">Turn on JavaScript to sign up.</p>
+            <div class="bt-row">
+              <div><label for="join-name">First name</label>
+              <input id="join-name" name="name" type="text" autocomplete="given-name" autocapitalize="words" maxlength="50" required aria-describedby="join-status"></div>
+              <div><label for="join-year">Birth year</label>
+              <input id="join-year" name="year" type="text" autocomplete="off" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="1990" required aria-describedby="join-status"></div>
+            </div>
+            <label for="join-email">Email</label>
+            <input id="join-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false"
+                   placeholder="you@example.com" required aria-describedby="join-consent join-status">
+            <fieldset class="seg" data-seg aria-describedby="join-status">
+              <legend>What do you use?</legend>
+              <label><input type="radio" name="platform" value="iphone"><span>iPhone</span></label>
+              <label><input type="radio" name="platform" value="android"><span>Android</span></label>
+              <label><input type="radio" name="platform" value="computer"><span>Computer</span></label>
+            </fieldset>
+            <p class="bt-hint" data-hint aria-live="polite"></p>
+            <div class="captcha" data-captcha hidden></div>
+            <button type="submit" class="cta">Join the beta</button>
+            <p class="consent" id="join-consent"><span id="join-consent-text">On iPhone we share your first name and email with Apple so TestFlight can send you the invite. You'll also get Forge launch news and occasional training tips. Unsubscribe any time.</span>
+              <a href="/#email-privacy" data-legal="privacy">How we use your email</a></p>
+            <p class="status" id="join-status" role="status" aria-live="polite"></p>
+            <div class="joined-share" data-joined hidden>
+              <a class="cta ghost" data-testflight href="https://apps.apple.com/app/testflight/id899247664" hidden>Get TestFlight</a>
+              <button type="button" class="cta ghost" data-share>Send this to a friend</button>
+            </div>
+          </form>
+          <p class="closed" data-join-closed hidden>Sign-ups open soon. Check back here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ three pictures -->
+    <section class="bt-pics" aria-labelledby="pics-title">
+      <div class="wrap">
+        <p class="kicker">What you'll try</p>
+        <h2 id="pics-title">Three things to try.</h2>
+        <ul class="bt-grid">
+          <li class="bt-fig">
+            <div class="phone"><img src="/img/shot-hotel-workout.webp" srcset="/img/shot-hotel-workout-360.webp 360w, /img/shot-hotel-workout.webp 720w" sizes="(min-width: 700px) 240px, 80vw" width="720" height="1558" loading="lazy" alt="A 30-minute chest and back workout Forge built for a hotel room"></div>
+            <p>Tell it where you are. One tap builds your workout.</p>
+          </li>
+          <li class="bt-fig">
+            <div class="phone"><img src="/img/beta-projection.webp" srcset="/img/beta-projection-360.webp 360w, /img/beta-projection.webp 720w" sizes="(min-width: 700px) 240px, 80vw" width="720" height="1558" loading="lazy" alt="A sample person's 3D body in Forge, now and projected weeks ahead"></div>
+            <p>See a 3D you, weeks from now. A projection, not a promise.</p>
+          </li>
+          <li class="bt-fig">
+            <div class="phone"><img src="/img/beta-garmin.webp" srcset="/img/beta-garmin-360.webp 360w, /img/beta-garmin.webp 720w" sizes="(min-width: 700px) 240px, 80vw" width="720" height="1558" loading="lazy" alt="The Send to watch button on a workout in Forge"></div>
+            <p>Send the workout to your Garmin watch.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================ share -->
+    <section class="last band-dark" aria-labelledby="last-title">
+      <div class="wrap last-in">
+        <h2 id="last-title">Know someone who trains on the road?</h2>
+        <p>The biggest favor: send this page to two or three friends who'd use it.</p>
+        <div class="last-acts">
+          <button type="button" class="cta" data-share>Send this to a friend</button>
+          <a class="cta ghost" href="#join" data-focus-join>Join the beta</a>
+        </div>
+        <p class="status share-status" data-share-status role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- phones: a bar that scrolls to the form (hidden while the form is on screen and once someone has joined) -->
+  <div class="bt-sticky" data-sticky hidden><a class="cta" href="#join" data-focus-join>Join the beta</a></div>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. Screens show a sample person; projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+</body>
+</html>
