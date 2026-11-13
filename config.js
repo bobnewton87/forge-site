@@ -1,0 +1,1 @@
+const e={subscribeUrl:"https://rxklsjspvwltsixbmqlv.supabase.co/functions/v1/subscribe",turnstileSiteKey:"0x4AAAAAAFm7y59G-Lmgo6Rl",legalBaseUrl:"https://forgetrainanywhere.com",gaMeasurementId:"G-BLVT69FTDF"};var s=e;export{e as config,s as default};

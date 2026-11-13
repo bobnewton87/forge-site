@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Anvil Spark</title>
+  <desc>The forge itself: a squat iron anvil throwing white-hot sparks where the hammer lands. Strength made, not bought.</desc>
+  <defs>
+    <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb648"/>
+      <stop offset="0.5" stop-color="#ff6b3d"/>
+      <stop offset="1" stop-color="#d9301c"/>
+    </linearGradient>
+    <linearGradient id="emberMark" gradientUnits="userSpaceOnUse" x1="200" y1="440" x2="820" y2="820">
+      <stop offset="0" stop-color="#ffb648"/>
+      <stop offset="0.55" stop-color="#ff6b3d"/>
+      <stop offset="1" stop-color="#e0391f"/>
+    </linearGradient>
+  </defs>
+  <g id="bg"><rect width="1024" height="1024" fill="url(#ember)"/></g>
+  <g id="fg">
+    <path fill="#190a04" stroke="#190a04" stroke-width="16" stroke-linejoin="round" d="M832 446 H356 Q258 446 160 488 Q250 548 384 566 C434 576 462 606 466 652 V694 C466 730 422 748 356 768 V820 H790 V768 C724 748 680 730 680 694 V652 C684 606 718 576 770 568 H832 Z"/>
+    <g fill="#fff4dc" stroke="#fff4dc" stroke-width="8" stroke-linejoin="round"><path d="M500 405 L467 377 L374 359 L457 406 Z"/> <path d="M535 367 L511 309 L411 209 L484 330 Z"/> <path d="M581 348 L592 275 L556 110 L554 279 Z"/> <path d="M629 357 L672 308 L722 168 L642 293 Z"/> <path d="M671 387 L716 377 L794 311 L700 352 Z"/></g>
+  </g>
+  <g id="fg-dark" display="none">
+    <path fill="url(#emberMark)" stroke="url(#emberMark)" stroke-width="16" stroke-linejoin="round" d="M832 446 H356 Q258 446 160 488 Q250 548 384 566 C434 576 462 606 466 652 V694 C466 730 422 748 356 768 V820 H790 V768 C724 748 680 730 680 694 V652 C684 606 718 576 770 568 H832 Z"/>
+    <g fill="#fff4dc" stroke="#fff4dc" stroke-width="8" stroke-linejoin="round"><path d="M500 405 L467 377 L374 359 L457 406 Z"/> <path d="M535 367 L511 309 L411 209 L484 330 Z"/> <path d="M581 348 L592 275 L556 110 L554 279 Z"/> <path d="M629 357 L672 308 L722 168 L642 293 Z"/> <path d="M671 387 L716 377 L794 311 L700 352 Z"/></g>
+  </g>
+</svg>
