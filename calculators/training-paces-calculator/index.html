@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Training Paces Calculator from a Race Result · Forge</title>
+  <meta name="description" content="Free training paces calculator. Enter a recent race time and get your easy, steady, marathon, threshold, 10K, 5K, 3K and mile paces per mile or kilometre.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/calculators/training-paces-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/calculators/training-paces-calculator/">
+  <meta property="og:title" content="Training Paces Calculator from a Race Result">
+  <meta property="og:description" content="Free training paces calculator. Enter a recent race time and get your easy, steady, marathon, threshold, 10K, 5K, 3K and mile paces per mile or kilometre.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Training Paces Calculator from a Race Result">
+  <meta name="twitter:description" content="Free training paces calculator. Enter a recent race time and get your easy, steady, marathon, threshold, 10K, 5K, 3K and mile paces per mile or kilometre.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/calculators/calc.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forge",
+          "item": "https://forgetrainanywhere.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free calculators",
+          "item": "https://forgetrainanywhere.com/calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Training paces calculator",
+          "item": "https://forgetrainanywhere.com/calculators/training-paces-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://forgetrainanywhere.com/calculators/training-paces-calculator/#app",
+      "name": "Training paces calculator",
+      "url": "https://forgetrainanywhere.com/calculators/training-paces-calculator/",
+      "description": "Free training paces calculator. Enter a recent race time and get your easy, steady, marathon, threshold, 10K, 5K, 3K and mile paces per mile or kilometre.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://forgetrainanywhere.com/#org"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" src="/landing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#calc">Skip to the calculator</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/calculators/">Free calculators</a></nav>
+      <a class="cta sm" href="/beta/?via=tools-training-paces" data-beta-cta>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="t-hero" aria-labelledby="t-title">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Forge</a> <span aria-hidden="true">›</span> <a href="/calculators/">Free calculators</a> <span aria-hidden="true">›</span> <span aria-current="page">Training paces calculator</span></nav>
+        <p class="kicker">Free tool</p>
+        <h1 id="t-title">Training paces calculator</h1>
+        <p class="sub">Enter a recent race result and get the paces to train at: easy, steady, marathon, threshold, 10K, 5K, 3K and mile pace, per mile or per kilometre.</p>
+      </div>
+    </section>
+
+    <section class="calc" id="calc" aria-label="Training paces calculator">
+      <div class="wrap calc-in">
+        <div class="tcard">
+          <form data-calc novalidate>
+            <fieldset class="seg"><legend>Paces per</legend><div class="seg-in"><label><input type="radio" name="u" value="mi" checked><span>Miles</span></label><label><input type="radio" name="u" value="km"><span>Kilometres</span></label></div></fieldset>
+            <div class="f"><label for="dist">Race distance</label><select id="dist" name="dist"><option value="1609.344">Mile</option><option value="3000">3K</option><option value="5000" selected>5K</option><option value="10000">10K</option><option value="15000">15K</option><option value="16093.44">10 miles</option><option value="21097.5">Half marathon</option><option value="42195">Marathon</option><option value="other">Other distance</option></select></div>
+            <div class="f" data-other hidden><label for="other">Distance</label><input id="other" name="other" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="other-h"><p class="hint" id="other-h">In the units chosen above. At least 1,600 m (1 mile).</p></div>
+            <fieldset class="f time"><legend>Finish time</legend><div class="time-in"><label><span>hours</span><input name="TH" type="number" inputmode="numeric" step="1" min="0" max="99" autocomplete="off" aria-describedby="T-h"></label><label><span>minutes</span><input name="TM" type="number" inputmode="numeric" step="1" min="0" max="599" autocomplete="off" aria-describedby="T-h"></label><label><span>seconds</span><input name="TS" type="number" inputmode="numeric" step="any" min="0" max="5999" autocomplete="off" aria-describedby="T-h"></label></div><p class="hint" id="T-h">Your time for that race.</p></fieldset>
+            <div class="f"><label for="long">Longest run in the last 8 weeks (optional)</label><input id="long" name="long" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="long-h"><p class="hint" id="long-h">In the units chosen above. Leave blank if you are not sure: the marathon pace is then read cautiously.</p></div>
+            <div class="acts"><button class="cta" type="submit">Calculate</button></div>
+          </form>
+          <p class="local">Everything runs in your browser. Nothing you type here is sent anywhere or saved.</p>
+        </div>
+        <div class="tcard out" data-out data-empty aria-live="polite" aria-atomic="false">
+          <p class="note">Your answer appears here. It is an estimate for training, not a promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose wrap narrow">
+      <section aria-labelledby="how-h">
+        <h2 id="how-h">How it works</h2>
+        <p>Forge fits a curve of the speed a runner can hold for different lengths of time to your result. It fits a curve of the speed you can hold for different lengths of time to your result, so the answer is only as good as the result you give it: use a recent, all-out race or time trial on a flat road or track, not a hilly, treadmill or easy run.</p>
+        <p>Each training pace is then read from that curve. The race paces (mile, 3K, 5K, 10K, half marathon, marathon) are the speeds the curve gives at those distances. Threshold is the pace you could race for about 75 minutes (the half marathon pace, if your half takes less). Easy, steady and recovery paces are shares of your marathon speed: easy is 75 to 82 percent of it, steady 90 to 95 percent, recovery 68 to 75 percent.</p>
+        <p>The range column is the band around each pace, for the days you want some room: the ranges for the race paces are 2 percent either side.</p>
+      </section>
+      <section aria-labelledby="src-h">
+        <h2 id="src-h">Where the method comes from</h2>
+        <ul class="refs">
+          <li>Daniels J, Gilbert J (1979). <i>Oxygen Power: Performance Tables for Distance Runners</i>. The two published equations Forge uses for the oxygen cost of running at a speed and the share of that capacity a runner can hold for a given time.</li>
+          <li>Vickers AJ, Vertosick EA (2016). An empirical study of race times in recreational endurance runners. <i>BMC Sports Science, Medicine and Rehabilitation</i> 8:26. doi:10.1186/s13102-016-0052-y. Why the marathon is read cautiously without long runs.</li>
+          <li>Jones AM, Burnley M, Black MI, et al. (2019). The maximal metabolic steady state: redefining the "gold standard". <i>Physiological Reports</i> 7(10):e14098. doi:10.14814/phy2.14098. The critical-speed effort that stands in for the 10K pace of a slower 10K runner.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">What it cannot tell you</h2>
+        <p>These are estimates for training, not a medical or fitness test, and not a promise. A result from a different day, a hilly course or a poor race will move every number. Re-enter a newer result as you improve.</p>
+        <p>The curve is built from one result, so it cannot know whether you are better suited to short races or long ones. The more your result differs from the pace you are choosing, the less it says: trust the paces nearest your race distance most.</p>
+        <p>If your 10K takes 58 minutes or longer, the 10K row becomes a critical-speed effort between your 10K and 5K pace, and the page says so.</p>
+      </section>
+      <section aria-labelledby="more-h">
+        <h2 id="more-h">More free calculators</h2>
+        <ul class="more">
+          <li><a href="/calculators/race-time-predictor/">Race time predictor</a> <span>What one race result suggests for every other distance, with a likely range.</span></li>
+          <li><a href="/calculators/running-pace-calculator/">Running pace calculator</a> <span>Pace, finish time or distance from any two of the three, with splits.</span></li>
+          <li><a href="/calculators/">All the free calculators</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="band-dark next" aria-labelledby="next-h">
+      <div class="wrap narrow">
+        <p class="kicker">The next step</p>
+        <h2 id="next-h">Let your paces move as you improve</h2>
+        <p class="sub">Forge Run sets these paces from your results, raises them when you have earned it, and puts them into every run in your plan, built backward from your race. It shows a likely range, never a promise.</p>
+        <div class="join-acts"><a class="cta" href="/beta/?via=tools-training-paces" data-beta-cta>Join the beta</a></div>
+        <p class="fine">The beta is on iPhone, through TestFlight. Android is in progress. Not on an iPhone? You can join the launch list on the same page. Your account also works in your browser on a computer or tablet. No email is asked for here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/calculators/">Free calculators</a>
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. These calculators give estimates for training, not a promise. Projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+  <script type="module" src="/calculators/training-paces-calculator/calc.js"></script>
+</body>
+</html>

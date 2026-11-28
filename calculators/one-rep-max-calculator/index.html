@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>One-Rep Max Calculator (1RM) with Weights for Each Rep Count · Forge</title>
+  <meta name="description" content="Free one-rep max calculator. Enter the weight and reps of a hard set to estimate your 1RM, and see the weight to use for 1 to 12 reps. Pounds or kilograms.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/calculators/one-rep-max-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/calculators/one-rep-max-calculator/">
+  <meta property="og:title" content="One-Rep Max Calculator (1RM) with Weights for Each Rep Count">
+  <meta property="og:description" content="Free one-rep max calculator. Enter the weight and reps of a hard set to estimate your 1RM, and see the weight to use for 1 to 12 reps. Pounds or kilograms.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="One-Rep Max Calculator (1RM) with Weights for Each Rep Count">
+  <meta name="twitter:description" content="Free one-rep max calculator. Enter the weight and reps of a hard set to estimate your 1RM, and see the weight to use for 1 to 12 reps. Pounds or kilograms.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/calculators/calc.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forge",
+          "item": "https://forgetrainanywhere.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free calculators",
+          "item": "https://forgetrainanywhere.com/calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "One-rep max calculator",
+          "item": "https://forgetrainanywhere.com/calculators/one-rep-max-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://forgetrainanywhere.com/calculators/one-rep-max-calculator/#app",
+      "name": "One-rep max calculator",
+      "url": "https://forgetrainanywhere.com/calculators/one-rep-max-calculator/",
+      "description": "Free one-rep max calculator. Enter the weight and reps of a hard set to estimate your 1RM, and see the weight to use for 1 to 12 reps. Pounds or kilograms.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://forgetrainanywhere.com/#org"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" src="/landing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#calc">Skip to the calculator</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/calculators/">Free calculators</a></nav>
+      <a class="cta sm" href="/beta/?via=tools-1rm" data-beta-cta>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="t-hero" aria-labelledby="t-title">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Forge</a> <span aria-hidden="true">›</span> <a href="/calculators/">Free calculators</a> <span aria-hidden="true">›</span> <span aria-current="page">One-rep max calculator</span></nav>
+        <p class="kicker">Free tool</p>
+        <h1 id="t-title">One-rep max calculator</h1>
+        <p class="sub">Enter the weight and reps of a hard set and get an estimated one-rep max, plus the weight to use for any number of reps.</p>
+      </div>
+    </section>
+
+    <section class="calc" id="calc" aria-label="One-rep max calculator">
+      <div class="wrap calc-in">
+        <div class="tcard">
+          <form data-calc novalidate>
+            <fieldset class="seg"><legend>Weight in</legend><div class="seg-in"><label><input type="radio" name="u" value="lb" checked><span>Pounds</span></label><label><input type="radio" name="u" value="kg"><span>Kilograms</span></label></div></fieldset>
+            <div class="f"><label for="weight">Weight lifted</label><input id="weight" name="weight" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="weight-h"><p class="hint" id="weight-h">The total on the bar or the stack, in the units chosen above.</p></div>
+            <div class="f"><label for="reps">Reps you did</label><input id="reps" name="reps" type="number" inputmode="decimal" step="1" min="1" max="30" autocomplete="off" aria-describedby="reps-h"><p class="hint" id="reps-h">A set taken close to the point where you could not do another.</p></div>
+            <div class="f"><label for="round">Round the weights to</label><select id="round" name="round" aria-describedby="round-h"><option value="0" selected>Exact</option><option value="1">The nearest 1</option><option value="2.5">The nearest 2.5</option><option value="5">The nearest 5</option></select><p class="hint" id="round-h">In the units chosen above, so the table reads in plates you have.</p></div>
+            <div class="acts"><button class="cta" type="submit">Calculate</button></div>
+          </form>
+          <p class="local">Everything runs in your browser. Nothing you type here is sent anywhere or saved.</p>
+        </div>
+        <div class="tcard out" data-out data-empty aria-live="polite" aria-atomic="false">
+          <p class="note">Your answer appears here. It is an estimate for training, not a promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose wrap narrow">
+      <section aria-labelledby="how-h">
+        <h2 id="how-h">How it works</h2>
+        <p>Your estimated one-rep max is the weight times one plus the reps divided by 30. A set of 200 for 5 gives 200 &times; (1 + 5 &divide; 30) = 233.3.</p>
+        <p>The table runs the same sum the other way: the weight you could lift for a given number of reps is your one-rep max divided by one plus those reps divided by 30. The percent column is what that weight is of your one-rep max.</p>
+        <p>Forge counts any set of more than 12 reps as 12. A long set says little about a true max, and the formula drifts further off the longer the set.</p>
+      </section>
+      <section aria-labelledby="src-h">
+        <h2 id="src-h">Where the method comes from</h2>
+        <ul class="refs">
+          <li>Epley B (1985). Poundage chart. In <i>Boyd Epley Workout</i>. Lincoln, Nebraska: Body Enterprises. The formula, widely used in strength training.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">What it cannot tell you</h2>
+        <p>It is an estimate. It is most reliable for sets of about 10 reps or fewer, taken close to failure. A set far from failure, or a very long one, will read low or off.</p>
+        <p>Different lifts, and different people, fall away from the formula in different ways: it tends to be rougher for lifts with small muscles or a lot of technique. Use the table as a starting point and adjust to how the weight feels.</p>
+        <p>Do not test a true one-rep max alone, without a spotter or safeties, or when you are not warmed up. You do not need to test it to use the number.</p>
+      </section>
+      <section aria-labelledby="more-h">
+        <h2 id="more-h">More free calculators</h2>
+        <ul class="more">
+          <li><a href="/calculators/maintenance-calorie-calculator/">Maintenance calorie calculator</a> <span>Daily calorie burn from your size, activity and training, plus a protein range.</span></li>
+          <li><a href="/calculators/body-fat-calculator/">Body fat calculator</a> <span>Estimate body fat from a tape measure, with a likely range.</span></li>
+          <li><a href="/calculators/">All the free calculators</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="band-dark next" aria-labelledby="next-h">
+      <div class="wrap narrow">
+        <p class="kicker">The next step</p>
+        <h2 id="next-h">Get the weight for your next set</h2>
+        <p class="sub">Forge picks the weight for each set from what you did last time, and raises it when you have earned it, for the gym you are in, even a hotel room or a garage.</p>
+        <div class="join-acts"><a class="cta" href="/beta/?via=tools-1rm" data-beta-cta>Join the beta</a></div>
+        <p class="fine">The beta is on iPhone, through TestFlight. Android is in progress. Not on an iPhone? You can join the launch list on the same page. Your account also works in your browser on a computer or tablet. No email is asked for here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/calculators/">Free calculators</a>
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. These calculators give estimates for training, not a promise. Projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+  <script type="module" src="/calculators/one-rep-max-calculator/calc.js"></script>
+</body>
+</html>

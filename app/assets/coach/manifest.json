@@ -1,0 +1,1931 @@
+{
+ "v": 1,
+ "model": "ResembleAI/chatterbox (MIT)",
+ "voice": "the owner's own voice, zero-shot clone",
+ "exaggeration": 0.5,
+ "cfgWeight": 0.5,
+ "kbps": 48,
+ "codec": "aac-lc mono 24 kHz m4a",
+ "clips": {
+  "ask_about": {
+   "f": "ask_about.m4a",
+   "b": 26760,
+   "ms": 4220,
+   "text": "Hey. Just a few quick questions, then I'll set up your week. First, a bit about you."
+  },
+  "ask_strength": {
+   "f": "ask_strength.m4a",
+   "b": 13250,
+   "ms": 1980,
+   "text": "What do you want out of your lifting?"
+  },
+  "ask_cardio": {
+   "f": "ask_cardio.m4a",
+   "b": 15581,
+   "ms": 2350,
+   "text": "And running or cardio? Where does that fit?"
+  },
+  "ask_cardioRun": {
+   "f": "ask_cardioRun.m4a",
+   "b": 9093,
+   "ms": 1290,
+   "text": "What are you running for?"
+  },
+  "ask_race": {
+   "f": "ask_race.m4a",
+   "b": 16638,
+   "ms": 2520,
+   "text": "Tell me about the race. I'll work back from race day."
+  },
+  "ask_runnow": {
+   "f": "ask_runnow.m4a",
+   "b": 12916,
+   "ms": 1910,
+   "text": "Tell me where your running's at right now."
+  },
+  "ask_week": {
+   "f": "ask_week.m4a",
+   "b": 26222,
+   "ms": 4120,
+   "text": "How much can you train? Days, how long, and your most sets in a workout."
+  },
+  "ask_weekRun": {
+   "f": "ask_weekRun.m4a",
+   "b": 11924,
+   "ms": 1770,
+   "text": "How many days can you run?"
+  },
+  "ask_muscles": {
+   "f": "ask_muscles.m4a",
+   "b": 18983,
+   "ms": 2930,
+   "text": "If you only get one workout in this week, what's it got to hit?"
+  },
+  "ask_gym": {
+   "f": "ask_gym.m4a",
+   "b": 9775,
+   "ms": 1370,
+   "text": "Where do you work out?"
+  },
+  "ask_done": {
+   "f": "ask_done.m4a",
+   "b": 13481,
+   "ms": 2010,
+   "text": "Here's you, and here's your week."
+  },
+  "why_about": {
+   "f": "why_about.m4a",
+   "b": 26724,
+   "ms": 4150,
+   "text": "Your age, height and weight set your body, your calories and your paces."
+  },
+  "why_strength": {
+   "f": "why_strength.m4a",
+   "b": 19997,
+   "ms": 3040,
+   "text": "That sets your calories, how much you lift and how hard I push."
+  },
+  "why_cardio": {
+   "f": "why_cardio.m4a",
+   "b": 25478,
+   "ms": 4000,
+   "text": "That's how I know whether to plan runs, other cardio, or none."
+  },
+  "why_cardioRun": {
+   "f": "why_cardioRun.m4a",
+   "b": 21343,
+   "ms": 3290,
+   "text": "A race, or just fitness. That's how I plan your runs."
+  },
+  "why_race": {
+   "f": "why_race.m4a",
+   "b": 20476,
+   "ms": 3150,
+   "text": "The date tells me how to ramp the weeks and when to taper."
+  },
+  "why_runnow": {
+   "f": "why_runnow.m4a",
+   "b": 30766,
+   "ms": 4850,
+   "text": "A recent race is the best guide to your pace. Then how much you run each week, then your age and body."
+  },
+  "why_week": {
+   "f": "why_week.m4a",
+   "b": 17090,
+   "ms": 2590,
+   "text": "I keep your lifting days apart so you can recover."
+  },
+  "why_weekRun": {
+   "f": "why_weekRun.m4a",
+   "b": 21096,
+   "ms": 3270,
+   "text": "I space them out so the hard days have easy ones around them."
+  },
+  "why_muscles": {
+   "f": "why_muscles.m4a",
+   "b": 15822,
+   "ms": 2390,
+   "text": "Those go first whenever the week gets short."
+  },
+  "why_gym": {
+   "f": "why_gym.m4a",
+   "b": 18232,
+   "ms": 2750,
+   "text": "So I only give you workouts you can actually do."
+  },
+  "why_done": {
+   "f": "why_done.m4a",
+   "b": 17649,
+   "ms": 2690,
+   "text": "Change any day below. Settings has the rest."
+  },
+  "react_about": {
+   "f": "react_about.m4a",
+   "b": 8700,
+   "ms": 1230,
+   "text": "Alright, thanks."
+  },
+  "react_strength_build": {
+   "f": "react_strength_build.m4a",
+   "b": 9932,
+   "ms": 1450,
+   "text": "Let's build some muscle."
+  },
+  "react_strength_lose": {
+   "f": "react_strength_lose.m4a",
+   "b": 13952,
+   "ms": 2060,
+   "text": "Fat first. We'll keep your muscle."
+  },
+  "react_strength_recomp": {
+   "f": "react_strength_recomp.m4a",
+   "b": 21828,
+   "ms": 3400,
+   "text": "Both at once. The scale moves slower, but it works."
+  },
+  "react_strength_stronger": {
+   "f": "react_strength_stronger.m4a",
+   "b": 6938,
+   "ms": 910,
+   "text": "Heavier it is."
+  },
+  "react_strength_general": {
+   "f": "react_strength_general.m4a",
+   "b": 16018,
+   "ms": 2410,
+   "text": "Good. Showing up beats going extreme."
+  },
+  "react_strength_none": {
+   "f": "react_strength_none.m4a",
+   "b": 11056,
+   "ms": 1660,
+   "text": "Running only. Got it."
+  },
+  "react_exp_new": {
+   "f": "react_exp_new.m4a",
+   "b": 13119,
+   "ms": 1950,
+   "text": "We'll start easy and build up."
+  },
+  "react_exp_some": {
+   "f": "react_exp_some.m4a",
+   "b": 9301,
+   "ms": 1310,
+   "text": "That's a solid base."
+  },
+  "react_exp_experienced": {
+   "f": "react_exp_experienced.m4a",
+   "b": 13675,
+   "ms": 2040,
+   "text": "Good. Then we can push."
+  },
+  "react_cardio_race": {
+   "f": "react_cardio_race.m4a",
+   "b": 18231,
+   "ms": 2820,
+   "text": "A race. I'll work the runs back from race day."
+  },
+  "react_cardio_run": {
+   "f": "react_cardio_run.m4a",
+   "b": 19485,
+   "ms": 2950,
+   "text": "Fitness running. Mostly easy miles, a few harder ones."
+  },
+  "react_cardio_any": {
+   "f": "react_cardio_any.m4a",
+   "b": 13746,
+   "ms": 2060,
+   "text": "Any cardio works. I'll mix it up."
+  },
+  "react_cardio_little": {
+   "f": "react_cardio_little.m4a",
+   "b": 14164,
+   "ms": 2130,
+   "text": "No problem. Lifting comes first."
+  },
+  "react_runnow_result": {
+   "f": "react_runnow_result.m4a",
+   "b": 12132,
+   "ms": 1810,
+   "text": "Good, a real time helps."
+  },
+  "react_runnow_history": {
+   "f": "react_runnow_history.m4a",
+   "b": 14517,
+   "ms": 2190,
+   "text": "Good. I'll go off your running."
+  },
+  "react_runnow_new": {
+   "f": "react_runnow_new.m4a",
+   "b": 17119,
+   "ms": 2620,
+   "text": "No problem. We'll start easy and build."
+  },
+  "react_week_many": {
+   "f": "react_week_many.m4a",
+   "b": 16912,
+   "ms": 2580,
+   "text": "That's a lot of sets. I'll keep an eye on your recovery."
+  },
+  "react_week_short": {
+   "f": "react_week_short.m4a",
+   "b": 16069,
+   "ms": 2460,
+   "text": "Short and sharp. Works for me."
+  },
+  "react_runnow_off": {
+   "f": "react_runnow_off.m4a",
+   "b": 17110,
+   "ms": 2580,
+   "text": "Okay, not running right now. I'll build you back up."
+  },
+  "react_muscles_arms": {
+   "f": "react_muscles_arms.m4a",
+   "b": 12502,
+   "ms": 1870,
+   "text": "Arms first. I respect it."
+  },
+  "react_gym": {
+   "f": "react_gym.m4a",
+   "b": 17388,
+   "ms": 2660,
+   "text": "Got it. I'll use what you've got."
+  },
+  "wk_2_20": {
+   "f": "wk_2_20.m4a",
+   "b": 16095,
+   "ms": 2450,
+   "text": "2 days, 20 minutes. That works."
+  },
+  "wk_2_25": {
+   "f": "wk_2_25.m4a",
+   "b": 14916,
+   "ms": 2260,
+   "text": "2 days, 25 minutes. That works."
+  },
+  "wk_2_30": {
+   "f": "wk_2_30.m4a",
+   "b": 15623,
+   "ms": 2370,
+   "text": "2 days, 30 minutes. That works."
+  },
+  "wk_2_35": {
+   "f": "wk_2_35.m4a",
+   "b": 18445,
+   "ms": 2820,
+   "text": "2 days, 35 minutes. That works."
+  },
+  "wk_2_40": {
+   "f": "wk_2_40.m4a",
+   "b": 15413,
+   "ms": 2330,
+   "text": "2 days, 40 minutes. That works."
+  },
+  "wk_2_45": {
+   "f": "wk_2_45.m4a",
+   "b": 15152,
+   "ms": 2300,
+   "text": "2 days, 45 minutes. That works."
+  },
+  "wk_2_50": {
+   "f": "wk_2_50.m4a",
+   "b": 16650,
+   "ms": 2530,
+   "text": "2 days, 50 minutes. That works."
+  },
+  "wk_2_55": {
+   "f": "wk_2_55.m4a",
+   "b": 16367,
+   "ms": 2490,
+   "text": "2 days, 55 minutes. That works."
+  },
+  "wk_2_60": {
+   "f": "wk_2_60.m4a",
+   "b": 18095,
+   "ms": 2800,
+   "text": "2 days, 60 minutes. That works."
+  },
+  "wk_2_65": {
+   "f": "wk_2_65.m4a",
+   "b": 16319,
+   "ms": 2500,
+   "text": "2 days, 65 minutes. That works."
+  },
+  "wk_2_70": {
+   "f": "wk_2_70.m4a",
+   "b": 16422,
+   "ms": 2490,
+   "text": "2 days, 70 minutes. That works."
+  },
+  "wk_2_75": {
+   "f": "wk_2_75.m4a",
+   "b": 16817,
+   "ms": 2580,
+   "text": "2 days, 75 minutes. That works."
+  },
+  "wk_2_80": {
+   "f": "wk_2_80.m4a",
+   "b": 16032,
+   "ms": 2430,
+   "text": "2 days, 80 minutes. That works."
+  },
+  "wk_2_85": {
+   "f": "wk_2_85.m4a",
+   "b": 16366,
+   "ms": 2480,
+   "text": "2 days, 85 minutes. That works."
+  },
+  "wk_2_90": {
+   "f": "wk_2_90.m4a",
+   "b": 19478,
+   "ms": 2960,
+   "text": "2 days, 90 minutes. That works."
+  },
+  "wk_2_95": {
+   "f": "wk_2_95.m4a",
+   "b": 18260,
+   "ms": 2810,
+   "text": "2 days, 95 minutes. That works."
+  },
+  "wk_2_100": {
+   "f": "wk_2_100.m4a",
+   "b": 15896,
+   "ms": 2410,
+   "text": "2 days, 100 minutes. That works."
+  },
+  "wk_2_105": {
+   "f": "wk_2_105.m4a",
+   "b": 17673,
+   "ms": 2690,
+   "text": "2 days, 105 minutes. That works."
+  },
+  "wk_2_110": {
+   "f": "wk_2_110.m4a",
+   "b": 17143,
+   "ms": 2620,
+   "text": "2 days, 110 minutes. That works."
+  },
+  "wk_2_115": {
+   "f": "wk_2_115.m4a",
+   "b": 18730,
+   "ms": 2890,
+   "text": "2 days, 115 minutes. That works."
+  },
+  "wk_2_120": {
+   "f": "wk_2_120.m4a",
+   "b": 16175,
+   "ms": 2450,
+   "text": "2 days, 120 minutes. That works."
+  },
+  "wk_3_20": {
+   "f": "wk_3_20.m4a",
+   "b": 18200,
+   "ms": 2780,
+   "text": "3 days, 20 minutes. That works."
+  },
+  "wk_3_25": {
+   "f": "wk_3_25.m4a",
+   "b": 18976,
+   "ms": 2930,
+   "text": "3 days, 25 minutes. That works."
+  },
+  "wk_3_30": {
+   "f": "wk_3_30.m4a",
+   "b": 14202,
+   "ms": 2140,
+   "text": "3 days, 30 minutes. That works."
+  },
+  "wk_3_35": {
+   "f": "wk_3_35.m4a",
+   "b": 19801,
+   "ms": 3050,
+   "text": "3 days, 35 minutes. That works."
+  },
+  "wk_3_40": {
+   "f": "wk_3_40.m4a",
+   "b": 15038,
+   "ms": 2290,
+   "text": "3 days, 40 minutes. That works."
+  },
+  "wk_3_45": {
+   "f": "wk_3_45.m4a",
+   "b": 16267,
+   "ms": 2470,
+   "text": "3 days, 45 minutes. That works."
+  },
+  "wk_3_50": {
+   "f": "wk_3_50.m4a",
+   "b": 18451,
+   "ms": 2820,
+   "text": "3 days, 50 minutes. That works."
+  },
+  "wk_3_55": {
+   "f": "wk_3_55.m4a",
+   "b": 20158,
+   "ms": 3130,
+   "text": "3 days, 55 minutes. That works."
+  },
+  "wk_3_60": {
+   "f": "wk_3_60.m4a",
+   "b": 15594,
+   "ms": 2360,
+   "text": "3 days, 60 minutes. That works."
+  },
+  "wk_3_65": {
+   "f": "wk_3_65.m4a",
+   "b": 17541,
+   "ms": 2690,
+   "text": "3 days, 65 minutes. That works."
+  },
+  "wk_3_70": {
+   "f": "wk_3_70.m4a",
+   "b": 16050,
+   "ms": 2450,
+   "text": "3 days, 70 minutes. That works."
+  },
+  "wk_3_75": {
+   "f": "wk_3_75.m4a",
+   "b": 17124,
+   "ms": 2590,
+   "text": "3 days, 75 minutes. That works."
+  },
+  "wk_3_80": {
+   "f": "wk_3_80.m4a",
+   "b": 20251,
+   "ms": 3130,
+   "text": "3 days, 80 minutes. That works."
+  },
+  "wk_3_85": {
+   "f": "wk_3_85.m4a",
+   "b": 17136,
+   "ms": 2620,
+   "text": "3 days, 85 minutes. That works."
+  },
+  "wk_3_90": {
+   "f": "wk_3_90.m4a",
+   "b": 16386,
+   "ms": 2460,
+   "text": "3 days, 90 minutes. That works."
+  },
+  "wk_3_95": {
+   "f": "wk_3_95.m4a",
+   "b": 17056,
+   "ms": 2610,
+   "text": "3 days, 95 minutes. That works."
+  },
+  "wk_3_100": {
+   "f": "wk_3_100.m4a",
+   "b": 15835,
+   "ms": 2390,
+   "text": "3 days, 100 minutes. That works."
+  },
+  "wk_3_105": {
+   "f": "wk_3_105.m4a",
+   "b": 16924,
+   "ms": 2570,
+   "text": "3 days, 105 minutes. That works."
+  },
+  "wk_3_110": {
+   "f": "wk_3_110.m4a",
+   "b": 16061,
+   "ms": 2450,
+   "text": "3 days, 110 minutes. That works."
+  },
+  "wk_3_115": {
+   "f": "wk_3_115.m4a",
+   "b": 18175,
+   "ms": 2810,
+   "text": "3 days, 115 minutes. That works."
+  },
+  "wk_3_120": {
+   "f": "wk_3_120.m4a",
+   "b": 19487,
+   "ms": 3000,
+   "text": "3 days, 120 minutes. That works."
+  },
+  "wk_4_20": {
+   "f": "wk_4_20.m4a",
+   "b": 15660,
+   "ms": 2370,
+   "text": "4 days, 20 minutes. That works."
+  },
+  "wk_4_25": {
+   "f": "wk_4_25.m4a",
+   "b": 16100,
+   "ms": 2440,
+   "text": "4 days, 25 minutes. That works."
+  },
+  "wk_4_30": {
+   "f": "wk_4_30.m4a",
+   "b": 16651,
+   "ms": 2500,
+   "text": "4 days, 30 minutes. That works."
+  },
+  "wk_4_35": {
+   "f": "wk_4_35.m4a",
+   "b": 17940,
+   "ms": 2760,
+   "text": "4 days, 35 minutes. That works."
+  },
+  "wk_4_40": {
+   "f": "wk_4_40.m4a",
+   "b": 16348,
+   "ms": 2460,
+   "text": "4 days, 40 minutes. That works."
+  },
+  "wk_4_45": {
+   "f": "wk_4_45.m4a",
+   "b": 18910,
+   "ms": 2880,
+   "text": "4 days, 45 minutes. That works."
+  },
+  "wk_4_50": {
+   "f": "wk_4_50.m4a",
+   "b": 15748,
+   "ms": 2360,
+   "text": "4 days, 50 minutes. That works."
+  },
+  "wk_4_55": {
+   "f": "wk_4_55.m4a",
+   "b": 17741,
+   "ms": 2650,
+   "text": "4 days, 55 minutes. That works."
+  },
+  "wk_4_60": {
+   "f": "wk_4_60.m4a",
+   "b": 16437,
+   "ms": 2480,
+   "text": "4 days, 60 minutes. That works."
+  },
+  "wk_4_65": {
+   "f": "wk_4_65.m4a",
+   "b": 17144,
+   "ms": 2590,
+   "text": "4 days, 65 minutes. That works."
+  },
+  "wk_4_70": {
+   "f": "wk_4_70.m4a",
+   "b": 16696,
+   "ms": 2520,
+   "text": "4 days, 70 minutes. That works."
+  },
+  "wk_4_75": {
+   "f": "wk_4_75.m4a",
+   "b": 18315,
+   "ms": 2810,
+   "text": "4 days, 75 minutes. That works."
+  },
+  "wk_4_80": {
+   "f": "wk_4_80.m4a",
+   "b": 18234,
+   "ms": 2790,
+   "text": "4 days, 80 minutes. That works."
+  },
+  "wk_4_85": {
+   "f": "wk_4_85.m4a",
+   "b": 19807,
+   "ms": 3060,
+   "text": "4 days, 85 minutes. That works."
+  },
+  "wk_4_90": {
+   "f": "wk_4_90.m4a",
+   "b": 17888,
+   "ms": 2760,
+   "text": "4 days, 90 minutes. That works."
+  },
+  "wk_4_95": {
+   "f": "wk_4_95.m4a",
+   "b": 19731,
+   "ms": 3030,
+   "text": "4 days, 95 minutes. That works."
+  },
+  "wk_4_100": {
+   "f": "wk_4_100.m4a",
+   "b": 15858,
+   "ms": 2400,
+   "text": "4 days, 100 minutes. That works."
+  },
+  "wk_4_105": {
+   "f": "wk_4_105.m4a",
+   "b": 19596,
+   "ms": 3050,
+   "text": "4 days, 105 minutes. That works."
+  },
+  "wk_4_110": {
+   "f": "wk_4_110.m4a",
+   "b": 18229,
+   "ms": 2750,
+   "text": "4 days, 110 minutes. That works."
+  },
+  "wk_4_115": {
+   "f": "wk_4_115.m4a",
+   "b": 18698,
+   "ms": 2880,
+   "text": "4 days, 115 minutes. That works."
+  },
+  "wk_4_120": {
+   "f": "wk_4_120.m4a",
+   "b": 17611,
+   "ms": 2670,
+   "text": "4 days, 120 minutes. That works."
+  },
+  "wk_5_20": {
+   "f": "wk_5_20.m4a",
+   "b": 17655,
+   "ms": 2690,
+   "text": "5 days, 20 minutes. That works."
+  },
+  "wk_5_25": {
+   "f": "wk_5_25.m4a",
+   "b": 19675,
+   "ms": 3020,
+   "text": "5 days, 25 minutes. That works."
+  },
+  "wk_5_30": {
+   "f": "wk_5_30.m4a",
+   "b": 17401,
+   "ms": 2620,
+   "text": "5 days, 30 minutes. That works."
+  },
+  "wk_5_35": {
+   "f": "wk_5_35.m4a",
+   "b": 17974,
+   "ms": 2710,
+   "text": "5 days, 35 minutes. That works."
+  },
+  "wk_5_40": {
+   "f": "wk_5_40.m4a",
+   "b": 16589,
+   "ms": 2510,
+   "text": "5 days, 40 minutes. That works."
+  },
+  "wk_5_45": {
+   "f": "wk_5_45.m4a",
+   "b": 19026,
+   "ms": 2940,
+   "text": "5 days, 45 minutes. That works."
+  },
+  "wk_5_50": {
+   "f": "wk_5_50.m4a",
+   "b": 19181,
+   "ms": 2960,
+   "text": "5 days, 50 minutes. That works."
+  },
+  "wk_5_55": {
+   "f": "wk_5_55.m4a",
+   "b": 17866,
+   "ms": 2720,
+   "text": "5 days, 55 minutes. That works."
+  },
+  "wk_5_60": {
+   "f": "wk_5_60.m4a",
+   "b": 15584,
+   "ms": 2360,
+   "text": "5 days, 60 minutes. That works."
+  },
+  "wk_5_65": {
+   "f": "wk_5_65.m4a",
+   "b": 15550,
+   "ms": 2350,
+   "text": "5 days, 65 minutes. That works."
+  },
+  "wk_5_70": {
+   "f": "wk_5_70.m4a",
+   "b": 19235,
+   "ms": 2960,
+   "text": "5 days, 70 minutes. That works."
+  },
+  "wk_5_75": {
+   "f": "wk_5_75.m4a",
+   "b": 18127,
+   "ms": 2770,
+   "text": "5 days, 75 minutes. That works."
+  },
+  "wk_5_80": {
+   "f": "wk_5_80.m4a",
+   "b": 15598,
+   "ms": 2340,
+   "text": "5 days, 80 minutes. That works."
+  },
+  "wk_5_85": {
+   "f": "wk_5_85.m4a",
+   "b": 18672,
+   "ms": 2850,
+   "text": "5 days, 85 minutes. That works."
+  },
+  "wk_5_90": {
+   "f": "wk_5_90.m4a",
+   "b": 16797,
+   "ms": 2530,
+   "text": "5 days, 90 minutes. That works."
+  },
+  "wk_5_95": {
+   "f": "wk_5_95.m4a",
+   "b": 17823,
+   "ms": 2720,
+   "text": "5 days, 95 minutes. That works."
+  },
+  "wk_5_100": {
+   "f": "wk_5_100.m4a",
+   "b": 15107,
+   "ms": 2270,
+   "text": "5 days, 100 minutes. That works."
+  },
+  "wk_5_105": {
+   "f": "wk_5_105.m4a",
+   "b": 22751,
+   "ms": 3520,
+   "text": "5 days, 105 minutes. That works."
+  },
+  "wk_5_110": {
+   "f": "wk_5_110.m4a",
+   "b": 17683,
+   "ms": 2730,
+   "text": "5 days, 110 minutes. That works."
+  },
+  "wk_5_115": {
+   "f": "wk_5_115.m4a",
+   "b": 22235,
+   "ms": 3440,
+   "text": "5 days, 115 minutes. That works."
+  },
+  "wk_5_120": {
+   "f": "wk_5_120.m4a",
+   "b": 16106,
+   "ms": 2450,
+   "text": "5 days, 120 minutes. That works."
+  },
+  "wk_6_20": {
+   "f": "wk_6_20.m4a",
+   "b": 16616,
+   "ms": 2510,
+   "text": "6 days, 20 minutes. That works."
+  },
+  "wk_6_25": {
+   "f": "wk_6_25.m4a",
+   "b": 18203,
+   "ms": 2810,
+   "text": "6 days, 25 minutes. That works."
+  },
+  "wk_6_30": {
+   "f": "wk_6_30.m4a",
+   "b": 16860,
+   "ms": 2550,
+   "text": "6 days, 30 minutes. That works."
+  },
+  "wk_6_35": {
+   "f": "wk_6_35.m4a",
+   "b": 19067,
+   "ms": 2940,
+   "text": "6 days, 35 minutes. That works."
+  },
+  "wk_6_40": {
+   "f": "wk_6_40.m4a",
+   "b": 15370,
+   "ms": 2340,
+   "text": "6 days, 40 minutes. That works."
+  },
+  "wk_6_45": {
+   "f": "wk_6_45.m4a",
+   "b": 17742,
+   "ms": 2660,
+   "text": "6 days, 45 minutes. That works."
+  },
+  "wk_6_50": {
+   "f": "wk_6_50.m4a",
+   "b": 17400,
+   "ms": 2630,
+   "text": "6 days, 50 minutes. That works."
+  },
+  "wk_6_55": {
+   "f": "wk_6_55.m4a",
+   "b": 15603,
+   "ms": 2370,
+   "text": "6 days, 55 minutes. That works."
+  },
+  "wk_6_60": {
+   "f": "wk_6_60.m4a",
+   "b": 15891,
+   "ms": 2410,
+   "text": "6 days, 60 minutes. That works."
+  },
+  "wk_6_65": {
+   "f": "wk_6_65.m4a",
+   "b": 19079,
+   "ms": 2940,
+   "text": "6 days, 65 minutes. That works."
+  },
+  "wk_6_70": {
+   "f": "wk_6_70.m4a",
+   "b": 16107,
+   "ms": 2450,
+   "text": "6 days, 70 minutes. That works."
+  },
+  "wk_6_75": {
+   "f": "wk_6_75.m4a",
+   "b": 16342,
+   "ms": 2480,
+   "text": "6 days, 75 minutes. That works."
+  },
+  "wk_6_80": {
+   "f": "wk_6_80.m4a",
+   "b": 16406,
+   "ms": 2490,
+   "text": "6 days, 80 minutes. That works."
+  },
+  "wk_6_85": {
+   "f": "wk_6_85.m4a",
+   "b": 18721,
+   "ms": 2830,
+   "text": "6 days, 85 minutes. That works."
+  },
+  "wk_6_90": {
+   "f": "wk_6_90.m4a",
+   "b": 14259,
+   "ms": 2150,
+   "text": "6 days, 90 minutes. That works."
+  },
+  "wk_6_95": {
+   "f": "wk_6_95.m4a",
+   "b": 17774,
+   "ms": 2720,
+   "text": "6 days, 95 minutes. That works."
+  },
+  "wk_6_100": {
+   "f": "wk_6_100.m4a",
+   "b": 15461,
+   "ms": 2330,
+   "text": "6 days, 100 minutes. That works."
+  },
+  "wk_6_105": {
+   "f": "wk_6_105.m4a",
+   "b": 18593,
+   "ms": 2820,
+   "text": "6 days, 105 minutes. That works."
+  },
+  "wk_6_110": {
+   "f": "wk_6_110.m4a",
+   "b": 18206,
+   "ms": 2810,
+   "text": "6 days, 110 minutes. That works."
+  },
+  "wk_6_115": {
+   "f": "wk_6_115.m4a",
+   "b": 21053,
+   "ms": 3250,
+   "text": "6 days, 115 minutes. That works."
+  },
+  "wk_6_120": {
+   "f": "wk_6_120.m4a",
+   "b": 19063,
+   "ms": 2930,
+   "text": "6 days, 120 minutes. That works."
+  },
+  "wk_7_20": {
+   "f": "wk_7_20.m4a",
+   "b": 15595,
+   "ms": 2370,
+   "text": "7 days, 20 minutes. That works."
+  },
+  "wk_7_25": {
+   "f": "wk_7_25.m4a",
+   "b": 21630,
+   "ms": 3290,
+   "text": "7 days, 25 minutes. That works."
+  },
+  "wk_7_30": {
+   "f": "wk_7_30.m4a",
+   "b": 15553,
+   "ms": 2350,
+   "text": "7 days, 30 minutes. That works."
+  },
+  "wk_7_35": {
+   "f": "wk_7_35.m4a",
+   "b": 17935,
+   "ms": 2760,
+   "text": "7 days, 35 minutes. That works."
+  },
+  "wk_7_40": {
+   "f": "wk_7_40.m4a",
+   "b": 16412,
+   "ms": 2500,
+   "text": "7 days, 40 minutes. That works."
+  },
+  "wk_7_45": {
+   "f": "wk_7_45.m4a",
+   "b": 18194,
+   "ms": 2800,
+   "text": "7 days, 45 minutes. That works."
+  },
+  "wk_7_50": {
+   "f": "wk_7_50.m4a",
+   "b": 17160,
+   "ms": 2640,
+   "text": "7 days, 50 minutes. That works."
+  },
+  "wk_7_55": {
+   "f": "wk_7_55.m4a",
+   "b": 18568,
+   "ms": 2830,
+   "text": "7 days, 55 minutes. That works."
+  },
+  "wk_7_60": {
+   "f": "wk_7_60.m4a",
+   "b": 15863,
+   "ms": 2410,
+   "text": "7 days, 60 minutes. That works."
+  },
+  "wk_7_65": {
+   "f": "wk_7_65.m4a",
+   "b": 19054,
+   "ms": 2930,
+   "text": "7 days, 65 minutes. That works."
+  },
+  "wk_7_70": {
+   "f": "wk_7_70.m4a",
+   "b": 17891,
+   "ms": 2760,
+   "text": "7 days, 70 minutes. That works."
+  },
+  "wk_7_75": {
+   "f": "wk_7_75.m4a",
+   "b": 19652,
+   "ms": 3050,
+   "text": "7 days, 75 minutes. That works."
+  },
+  "wk_7_80": {
+   "f": "wk_7_80.m4a",
+   "b": 15537,
+   "ms": 2380,
+   "text": "7 days, 80 minutes. That works."
+  },
+  "wk_7_85": {
+   "f": "wk_7_85.m4a",
+   "b": 15810,
+   "ms": 2420,
+   "text": "7 days, 85 minutes. That works."
+  },
+  "wk_7_90": {
+   "f": "wk_7_90.m4a",
+   "b": 15047,
+   "ms": 2260,
+   "text": "7 days, 90 minutes. That works."
+  },
+  "wk_7_95": {
+   "f": "wk_7_95.m4a",
+   "b": 19213,
+   "ms": 2950,
+   "text": "7 days, 95 minutes. That works."
+  },
+  "wk_7_100": {
+   "f": "wk_7_100.m4a",
+   "b": 17375,
+   "ms": 2650,
+   "text": "7 days, 100 minutes. That works."
+  },
+  "wk_7_105": {
+   "f": "wk_7_105.m4a",
+   "b": 16401,
+   "ms": 2480,
+   "text": "7 days, 105 minutes. That works."
+  },
+  "wk_7_110": {
+   "f": "wk_7_110.m4a",
+   "b": 17582,
+   "ms": 2720,
+   "text": "7 days, 110 minutes. That works."
+  },
+  "wk_7_115": {
+   "f": "wk_7_115.m4a",
+   "b": 18716,
+   "ms": 2880,
+   "text": "7 days, 115 minutes. That works."
+  },
+  "wk_7_120": {
+   "f": "wk_7_120.m4a",
+   "b": 17946,
+   "ms": 2760,
+   "text": "7 days, 120 minutes. That works."
+  },
+  "wkrun_2": {
+   "f": "wkrun_2.m4a",
+   "b": 18178,
+   "ms": 2750,
+   "text": "2 run days a week. That works."
+  },
+  "wkrun_3": {
+   "f": "wkrun_3.m4a",
+   "b": 13732,
+   "ms": 2050,
+   "text": "3 run days a week. That works."
+  },
+  "wkrun_4": {
+   "f": "wkrun_4.m4a",
+   "b": 15851,
+   "ms": 2420,
+   "text": "4 run days a week. That works."
+  },
+  "wkrun_5": {
+   "f": "wkrun_5.m4a",
+   "b": 16257,
+   "ms": 2490,
+   "text": "5 run days a week. That works."
+  },
+  "wkrun_6": {
+   "f": "wkrun_6.m4a",
+   "b": 13224,
+   "ms": 1970,
+   "text": "6 run days a week. That works."
+  },
+  "wkrun_7": {
+   "f": "wkrun_7.m4a",
+   "b": 18004,
+   "ms": 2750,
+   "text": "7 run days a week. That works."
+  },
+  "mu1_chest": {
+   "f": "mu1_chest.m4a",
+   "b": 8833,
+   "ms": 1250,
+   "text": "Nice, chest first."
+  },
+  "mu1_back": {
+   "f": "mu1_back.m4a",
+   "b": 8629,
+   "ms": 1210,
+   "text": "Nice, back first."
+  },
+  "mu1_delt_side": {
+   "f": "mu1_delt_side.m4a",
+   "b": 9273,
+   "ms": 1320,
+   "text": "Nice, shoulders first."
+  },
+  "mu1_delt_rear": {
+   "f": "mu1_delt_rear.m4a",
+   "b": 10537,
+   "ms": 1540,
+   "text": "Nice, rear delts first."
+  },
+  "mu1_biceps": {
+   "f": "mu1_biceps.m4a",
+   "b": 8741,
+   "ms": 1240,
+   "text": "Nice, biceps first."
+  },
+  "mu1_triceps": {
+   "f": "mu1_triceps.m4a",
+   "b": 9302,
+   "ms": 1310,
+   "text": "Nice, triceps first."
+  },
+  "mu1_forearms": {
+   "f": "mu1_forearms.m4a",
+   "b": 10968,
+   "ms": 1550,
+   "text": "Nice, forearms first."
+  },
+  "mu1_core": {
+   "f": "mu1_core.m4a",
+   "b": 12276,
+   "ms": 1810,
+   "text": "Nice, abs and core first."
+  },
+  "mu1_glutes": {
+   "f": "mu1_glutes.m4a",
+   "b": 9828,
+   "ms": 1420,
+   "text": "Nice, glutes first."
+  },
+  "mu1_quads": {
+   "f": "mu1_quads.m4a",
+   "b": 9554,
+   "ms": 1340,
+   "text": "Nice, quads first."
+  },
+  "mu1_hamstrings": {
+   "f": "mu1_hamstrings.m4a",
+   "b": 12045,
+   "ms": 1750,
+   "text": "Nice, hamstrings first."
+  },
+  "mu1_calves": {
+   "f": "mu1_calves.m4a",
+   "b": 9790,
+   "ms": 1410,
+   "text": "Nice, calves first."
+  },
+  "mu2_chest_back": {
+   "f": "mu2_chest_back.m4a",
+   "b": 12699,
+   "ms": 1890,
+   "text": "Chest, then back. Done."
+  },
+  "mu2_chest_delt_side": {
+   "f": "mu2_chest_delt_side.m4a",
+   "b": 16739,
+   "ms": 2560,
+   "text": "Chest, then shoulders. Done."
+  },
+  "mu2_chest_delt_rear": {
+   "f": "mu2_chest_delt_rear.m4a",
+   "b": 16412,
+   "ms": 2500,
+   "text": "Chest, then rear delts. Done."
+  },
+  "mu2_chest_biceps": {
+   "f": "mu2_chest_biceps.m4a",
+   "b": 17400,
+   "ms": 2620,
+   "text": "Chest, then biceps. Done."
+  },
+  "mu2_chest_triceps": {
+   "f": "mu2_chest_triceps.m4a",
+   "b": 16865,
+   "ms": 2550,
+   "text": "Chest, then triceps. Done."
+  },
+  "mu2_chest_forearms": {
+   "f": "mu2_chest_forearms.m4a",
+   "b": 17684,
+   "ms": 2730,
+   "text": "Chest, then forearms. Done."
+  },
+  "mu2_chest_core": {
+   "f": "mu2_chest_core.m4a",
+   "b": 17952,
+   "ms": 2770,
+   "text": "Chest, then abs and core. Done."
+  },
+  "mu2_chest_glutes": {
+   "f": "mu2_chest_glutes.m4a",
+   "b": 16351,
+   "ms": 2490,
+   "text": "Chest, then glutes. Done."
+  },
+  "mu2_chest_quads": {
+   "f": "mu2_chest_quads.m4a",
+   "b": 14275,
+   "ms": 2150,
+   "text": "Chest, then quads. Done."
+  },
+  "mu2_chest_hamstrings": {
+   "f": "mu2_chest_hamstrings.m4a",
+   "b": 13182,
+   "ms": 2000,
+   "text": "Chest, then hamstrings. Done."
+  },
+  "mu2_chest_calves": {
+   "f": "mu2_chest_calves.m4a",
+   "b": 14544,
+   "ms": 2210,
+   "text": "Chest, then calves. Done."
+  },
+  "mu2_back_chest": {
+   "f": "mu2_back_chest.m4a",
+   "b": 13716,
+   "ms": 2020,
+   "text": "Back, then chest. Done."
+  },
+  "mu2_back_delt_side": {
+   "f": "mu2_back_delt_side.m4a",
+   "b": 15837,
+   "ms": 2400,
+   "text": "Back, then shoulders. Done."
+  },
+  "mu2_back_delt_rear": {
+   "f": "mu2_back_delt_rear.m4a",
+   "b": 15646,
+   "ms": 2370,
+   "text": "Back, then rear delts. Done."
+  },
+  "mu2_back_biceps": {
+   "f": "mu2_back_biceps.m4a",
+   "b": 15604,
+   "ms": 2370,
+   "text": "Back, then biceps. Done."
+  },
+  "mu2_back_triceps": {
+   "f": "mu2_back_triceps.m4a",
+   "b": 16380,
+   "ms": 2500,
+   "text": "Back, then triceps. Done."
+  },
+  "mu2_back_forearms": {
+   "f": "mu2_back_forearms.m4a",
+   "b": 16289,
+   "ms": 2500,
+   "text": "Back, then forearms. Done."
+  },
+  "mu2_back_core": {
+   "f": "mu2_back_core.m4a",
+   "b": 19099,
+   "ms": 2950,
+   "text": "Back, then abs and core. Done."
+  },
+  "mu2_back_glutes": {
+   "f": "mu2_back_glutes.m4a",
+   "b": 16857,
+   "ms": 2550,
+   "text": "Back, then glutes. Done."
+  },
+  "mu2_back_quads": {
+   "f": "mu2_back_quads.m4a",
+   "b": 13725,
+   "ms": 2090,
+   "text": "Back, then quads. Done."
+  },
+  "mu2_back_hamstrings": {
+   "f": "mu2_back_hamstrings.m4a",
+   "b": 16363,
+   "ms": 2490,
+   "text": "Back, then hamstrings. Done."
+  },
+  "mu2_back_calves": {
+   "f": "mu2_back_calves.m4a",
+   "b": 16228,
+   "ms": 2440,
+   "text": "Back, then calves. Done."
+  },
+  "mu2_delt_side_chest": {
+   "f": "mu2_delt_side_chest.m4a",
+   "b": 13732,
+   "ms": 2080,
+   "text": "Shoulders, then chest. Done."
+  },
+  "mu2_delt_side_back": {
+   "f": "mu2_delt_side_back.m4a",
+   "b": 14511,
+   "ms": 2170,
+   "text": "Shoulders, then back. Done."
+  },
+  "mu2_delt_side_delt_rear": {
+   "f": "mu2_delt_side_delt_rear.m4a",
+   "b": 13849,
+   "ms": 2100,
+   "text": "Shoulders, then rear delts. Done."
+  },
+  "mu2_delt_side_biceps": {
+   "f": "mu2_delt_side_biceps.m4a",
+   "b": 14700,
+   "ms": 2210,
+   "text": "Shoulders, then biceps. Done."
+  },
+  "mu2_delt_side_triceps": {
+   "f": "mu2_delt_side_triceps.m4a",
+   "b": 13364,
+   "ms": 2010,
+   "text": "Shoulders, then triceps. Done."
+  },
+  "mu2_delt_side_forearms": {
+   "f": "mu2_delt_side_forearms.m4a",
+   "b": 16738,
+   "ms": 2560,
+   "text": "Shoulders, then forearms. Done."
+  },
+  "mu2_delt_side_core": {
+   "f": "mu2_delt_side_core.m4a",
+   "b": 19219,
+   "ms": 2970,
+   "text": "Shoulders, then abs and core. Done."
+  },
+  "mu2_delt_side_glutes": {
+   "f": "mu2_delt_side_glutes.m4a",
+   "b": 13673,
+   "ms": 2050,
+   "text": "Shoulders, then glutes. Done."
+  },
+  "mu2_delt_side_quads": {
+   "f": "mu2_delt_side_quads.m4a",
+   "b": 17646,
+   "ms": 2660,
+   "text": "Shoulders, then quads. Done."
+  },
+  "mu2_delt_side_hamstrings": {
+   "f": "mu2_delt_side_hamstrings.m4a",
+   "b": 16185,
+   "ms": 2400,
+   "text": "Shoulders, then hamstrings. Done."
+  },
+  "mu2_delt_side_calves": {
+   "f": "mu2_delt_side_calves.m4a",
+   "b": 14229,
+   "ms": 2130,
+   "text": "Shoulders, then calves. Done."
+  },
+  "mu2_delt_rear_chest": {
+   "f": "mu2_delt_rear_chest.m4a",
+   "b": 15857,
+   "ms": 2410,
+   "text": "Rear delts, then chest. Done."
+  },
+  "mu2_delt_rear_back": {
+   "f": "mu2_delt_rear_back.m4a",
+   "b": 13715,
+   "ms": 2050,
+   "text": "Rear delts, then back. Done."
+  },
+  "mu2_delt_rear_delt_side": {
+   "f": "mu2_delt_rear_delt_side.m4a",
+   "b": 17922,
+   "ms": 2750,
+   "text": "Rear delts, then shoulders. Done."
+  },
+  "mu2_delt_rear_biceps": {
+   "f": "mu2_delt_rear_biceps.m4a",
+   "b": 16623,
+   "ms": 2530,
+   "text": "Rear delts, then biceps. Done."
+  },
+  "mu2_delt_rear_triceps": {
+   "f": "mu2_delt_rear_triceps.m4a",
+   "b": 17668,
+   "ms": 2731,
+   "text": "Rear delts, then triceps. Done."
+  },
+  "mu2_delt_rear_forearms": {
+   "f": "mu2_delt_rear_forearms.m4a",
+   "b": 17546,
+   "ms": 2690,
+   "text": "Rear delts, then forearms. Done."
+  },
+  "mu2_delt_rear_core": {
+   "f": "mu2_delt_rear_core.m4a",
+   "b": 17921,
+   "ms": 2760,
+   "text": "Rear delts, then abs and core. Done."
+  },
+  "mu2_delt_rear_glutes": {
+   "f": "mu2_delt_rear_glutes.m4a",
+   "b": 13232,
+   "ms": 2010,
+   "text": "Rear delts, then glutes. Done."
+  },
+  "mu2_delt_rear_quads": {
+   "f": "mu2_delt_rear_quads.m4a",
+   "b": 17443,
+   "ms": 2620,
+   "text": "Rear delts, then quads. Done."
+  },
+  "mu2_delt_rear_hamstrings": {
+   "f": "mu2_delt_rear_hamstrings.m4a",
+   "b": 17607,
+   "ms": 2650,
+   "text": "Rear delts, then hamstrings. Done."
+  },
+  "mu2_delt_rear_calves": {
+   "f": "mu2_delt_rear_calves.m4a",
+   "b": 14720,
+   "ms": 2250,
+   "text": "Rear delts, then calves. Done."
+  },
+  "mu2_biceps_chest": {
+   "f": "mu2_biceps_chest.m4a",
+   "b": 12744,
+   "ms": 1900,
+   "text": "Biceps, then chest. Done."
+  },
+  "mu2_biceps_back": {
+   "f": "mu2_biceps_back.m4a",
+   "b": 16818,
+   "ms": 2560,
+   "text": "Biceps, then back. Done."
+  },
+  "mu2_biceps_delt_side": {
+   "f": "mu2_biceps_delt_side.m4a",
+   "b": 18143,
+   "ms": 2810,
+   "text": "Biceps, then shoulders. Done."
+  },
+  "mu2_biceps_delt_rear": {
+   "f": "mu2_biceps_delt_rear.m4a",
+   "b": 14630,
+   "ms": 2220,
+   "text": "Biceps, then rear delts. Done."
+  },
+  "mu2_biceps_triceps": {
+   "f": "mu2_biceps_triceps.m4a",
+   "b": 16656,
+   "ms": 2530,
+   "text": "Biceps, then triceps. Done."
+  },
+  "mu2_biceps_forearms": {
+   "f": "mu2_biceps_forearms.m4a",
+   "b": 14574,
+   "ms": 2210,
+   "text": "Biceps, then forearms. Done."
+  },
+  "mu2_biceps_core": {
+   "f": "mu2_biceps_core.m4a",
+   "b": 16352,
+   "ms": 2490,
+   "text": "Biceps, then abs and core. Done."
+  },
+  "mu2_biceps_glutes": {
+   "f": "mu2_biceps_glutes.m4a",
+   "b": 12925,
+   "ms": 1920,
+   "text": "Biceps, then glutes. Done."
+  },
+  "mu2_biceps_quads": {
+   "f": "mu2_biceps_quads.m4a",
+   "b": 15880,
+   "ms": 2410,
+   "text": "Biceps, then quads. Done."
+  },
+  "mu2_biceps_hamstrings": {
+   "f": "mu2_biceps_hamstrings.m4a",
+   "b": 14666,
+   "ms": 2220,
+   "text": "Biceps, then hamstrings. Done."
+  },
+  "mu2_biceps_calves": {
+   "f": "mu2_biceps_calves.m4a",
+   "b": 15889,
+   "ms": 2400,
+   "text": "Biceps, then calves. Done."
+  },
+  "mu2_triceps_chest": {
+   "f": "mu2_triceps_chest.m4a",
+   "b": 12098,
+   "ms": 1750,
+   "text": "Triceps, then chest. Done."
+  },
+  "mu2_triceps_back": {
+   "f": "mu2_triceps_back.m4a",
+   "b": 11705,
+   "ms": 1750,
+   "text": "Triceps, then back. Done."
+  },
+  "mu2_triceps_delt_side": {
+   "f": "mu2_triceps_delt_side.m4a",
+   "b": 19186,
+   "ms": 2940,
+   "text": "Triceps, then shoulders. Done."
+  },
+  "mu2_triceps_delt_rear": {
+   "f": "mu2_triceps_delt_rear.m4a",
+   "b": 14615,
+   "ms": 2210,
+   "text": "Triceps, then rear delts. Done."
+  },
+  "mu2_triceps_biceps": {
+   "f": "mu2_triceps_biceps.m4a",
+   "b": 14191,
+   "ms": 2120,
+   "text": "Triceps, then biceps. Done."
+  },
+  "mu2_triceps_forearms": {
+   "f": "mu2_triceps_forearms.m4a",
+   "b": 17708,
+   "ms": 2660,
+   "text": "Triceps, then forearms. Done."
+  },
+  "mu2_triceps_core": {
+   "f": "mu2_triceps_core.m4a",
+   "b": 16784,
+   "ms": 2560,
+   "text": "Triceps, then abs and core. Done."
+  },
+  "mu2_triceps_glutes": {
+   "f": "mu2_triceps_glutes.m4a",
+   "b": 14357,
+   "ms": 2160,
+   "text": "Triceps, then glutes. Done."
+  },
+  "mu2_triceps_quads": {
+   "f": "mu2_triceps_quads.m4a",
+   "b": 16431,
+   "ms": 2490,
+   "text": "Triceps, then quads. Done."
+  },
+  "mu2_triceps_hamstrings": {
+   "f": "mu2_triceps_hamstrings.m4a",
+   "b": 14184,
+   "ms": 2140,
+   "text": "Triceps, then hamstrings. Done."
+  },
+  "mu2_triceps_calves": {
+   "f": "mu2_triceps_calves.m4a",
+   "b": 14554,
+   "ms": 2210,
+   "text": "Triceps, then calves. Done."
+  },
+  "mu2_forearms_chest": {
+   "f": "mu2_forearms_chest.m4a",
+   "b": 17846,
+   "ms": 2690,
+   "text": "Forearms, then chest. Done."
+  },
+  "mu2_forearms_back": {
+   "f": "mu2_forearms_back.m4a",
+   "b": 14240,
+   "ms": 2120,
+   "text": "Forearms, then back. Done."
+  },
+  "mu2_forearms_delt_side": {
+   "f": "mu2_forearms_delt_side.m4a",
+   "b": 16038,
+   "ms": 2420,
+   "text": "Forearms, then shoulders. Done."
+  },
+  "mu2_forearms_delt_rear": {
+   "f": "mu2_forearms_delt_rear.m4a",
+   "b": 15761,
+   "ms": 2400,
+   "text": "Forearms, then rear delts. Done."
+  },
+  "mu2_forearms_biceps": {
+   "f": "mu2_forearms_biceps.m4a",
+   "b": 14787,
+   "ms": 2250,
+   "text": "Forearms, then biceps. Done."
+  },
+  "mu2_forearms_triceps": {
+   "f": "mu2_forearms_triceps.m4a",
+   "b": 17653,
+   "ms": 2720,
+   "text": "Forearms, then triceps. Done."
+  },
+  "mu2_forearms_core": {
+   "f": "mu2_forearms_core.m4a",
+   "b": 16978,
+   "ms": 2600,
+   "text": "Forearms, then abs and core. Done."
+  },
+  "mu2_forearms_glutes": {
+   "f": "mu2_forearms_glutes.m4a",
+   "b": 13674,
+   "ms": 2050,
+   "text": "Forearms, then glutes. Done."
+  },
+  "mu2_forearms_quads": {
+   "f": "mu2_forearms_quads.m4a",
+   "b": 16387,
+   "ms": 2500,
+   "text": "Forearms, then quads. Done."
+  },
+  "mu2_forearms_hamstrings": {
+   "f": "mu2_forearms_hamstrings.m4a",
+   "b": 15633,
+   "ms": 2360,
+   "text": "Forearms, then hamstrings. Done."
+  },
+  "mu2_forearms_calves": {
+   "f": "mu2_forearms_calves.m4a",
+   "b": 16357,
+   "ms": 2490,
+   "text": "Forearms, then calves. Done."
+  },
+  "mu2_core_chest": {
+   "f": "mu2_core_chest.m4a",
+   "b": 18002,
+   "ms": 2773,
+   "text": "Abs and core, then chest. Done."
+  },
+  "mu2_core_back": {
+   "f": "mu2_core_back.m4a",
+   "b": 17371,
+   "ms": 2630,
+   "text": "Abs and core, then back. Done."
+  },
+  "mu2_core_delt_side": {
+   "f": "mu2_core_delt_side.m4a",
+   "b": 14854,
+   "ms": 2260,
+   "text": "Abs and core, then shoulders. Done."
+  },
+  "mu2_core_delt_rear": {
+   "f": "mu2_core_delt_rear.m4a",
+   "b": 17546,
+   "ms": 2700,
+   "text": "Abs and core, then rear delts. Done."
+  },
+  "mu2_core_biceps": {
+   "f": "mu2_core_biceps.m4a",
+   "b": 15865,
+   "ms": 2420,
+   "text": "Abs and core, then biceps. Done."
+  },
+  "mu2_core_triceps": {
+   "f": "mu2_core_triceps.m4a",
+   "b": 19019,
+   "ms": 2900,
+   "text": "Abs and core, then triceps. Done."
+  },
+  "mu2_core_forearms": {
+   "f": "mu2_core_forearms.m4a",
+   "b": 16822,
+   "ms": 2570,
+   "text": "Abs and core, then forearms. Done."
+  },
+  "mu2_core_glutes": {
+   "f": "mu2_core_glutes.m4a",
+   "b": 16663,
+   "ms": 2530,
+   "text": "Abs and core, then glutes. Done."
+  },
+  "mu2_core_quads": {
+   "f": "mu2_core_quads.m4a",
+   "b": 17350,
+   "ms": 2680,
+   "text": "Abs and core, then quads. Done."
+  },
+  "mu2_core_hamstrings": {
+   "f": "mu2_core_hamstrings.m4a",
+   "b": 15551,
+   "ms": 2360,
+   "text": "Abs and core, then hamstrings. Done."
+  },
+  "mu2_core_calves": {
+   "f": "mu2_core_calves.m4a",
+   "b": 16870,
+   "ms": 2570,
+   "text": "Abs and core, then calves. Done."
+  },
+  "mu2_glutes_chest": {
+   "f": "mu2_glutes_chest.m4a",
+   "b": 14437,
+   "ms": 2150,
+   "text": "Glutes, then chest. Done."
+  },
+  "mu2_glutes_back": {
+   "f": "mu2_glutes_back.m4a",
+   "b": 11669,
+   "ms": 1730,
+   "text": "Glutes, then back. Done."
+  },
+  "mu2_glutes_delt_side": {
+   "f": "mu2_glutes_delt_side.m4a",
+   "b": 14538,
+   "ms": 2200,
+   "text": "Glutes, then shoulders. Done."
+  },
+  "mu2_glutes_delt_rear": {
+   "f": "mu2_glutes_delt_rear.m4a",
+   "b": 14844,
+   "ms": 2250,
+   "text": "Glutes, then rear delts. Done."
+  },
+  "mu2_glutes_biceps": {
+   "f": "mu2_glutes_biceps.m4a",
+   "b": 16331,
+   "ms": 2480,
+   "text": "Glutes, then biceps. Done."
+  },
+  "mu2_glutes_triceps": {
+   "f": "mu2_glutes_triceps.m4a",
+   "b": 16637,
+   "ms": 2520,
+   "text": "Glutes, then triceps. Done."
+  },
+  "mu2_glutes_forearms": {
+   "f": "mu2_glutes_forearms.m4a",
+   "b": 14017,
+   "ms": 2120,
+   "text": "Glutes, then forearms. Done."
+  },
+  "mu2_glutes_core": {
+   "f": "mu2_glutes_core.m4a",
+   "b": 16043,
+   "ms": 2450,
+   "text": "Glutes, then abs and core. Done."
+  },
+  "mu2_glutes_quads": {
+   "f": "mu2_glutes_quads.m4a",
+   "b": 14027,
+   "ms": 2110,
+   "text": "Glutes, then quads. Done."
+  },
+  "mu2_glutes_hamstrings": {
+   "f": "mu2_glutes_hamstrings.m4a",
+   "b": 14624,
+   "ms": 2210,
+   "text": "Glutes, then hamstrings. Done."
+  },
+  "mu2_glutes_calves": {
+   "f": "mu2_glutes_calves.m4a",
+   "b": 11961,
+   "ms": 1780,
+   "text": "Glutes, then calves. Done."
+  },
+  "mu2_quads_chest": {
+   "f": "mu2_quads_chest.m4a",
+   "b": 17661,
+   "ms": 2660,
+   "text": "Quads, then chest. Done."
+  },
+  "mu2_quads_back": {
+   "f": "mu2_quads_back.m4a",
+   "b": 11669,
+   "ms": 1730,
+   "text": "Quads, then back. Done."
+  },
+  "mu2_quads_delt_side": {
+   "f": "mu2_quads_delt_side.m4a",
+   "b": 16599,
+   "ms": 2500,
+   "text": "Quads, then shoulders. Done."
+  },
+  "mu2_quads_delt_rear": {
+   "f": "mu2_quads_delt_rear.m4a",
+   "b": 16372,
+   "ms": 2500,
+   "text": "Quads, then rear delts. Done."
+  },
+  "mu2_quads_biceps": {
+   "f": "mu2_quads_biceps.m4a",
+   "b": 14069,
+   "ms": 2130,
+   "text": "Quads, then biceps. Done."
+  },
+  "mu2_quads_triceps": {
+   "f": "mu2_quads_triceps.m4a",
+   "b": 13808,
+   "ms": 2050,
+   "text": "Quads, then triceps. Done."
+  },
+  "mu2_quads_forearms": {
+   "f": "mu2_quads_forearms.m4a",
+   "b": 17116,
+   "ms": 2610,
+   "text": "Quads, then forearms. Done."
+  },
+  "mu2_quads_core": {
+   "f": "mu2_quads_core.m4a",
+   "b": 18314,
+   "ms": 2820,
+   "text": "Quads, then abs and core. Done."
+  },
+  "mu2_quads_glutes": {
+   "f": "mu2_quads_glutes.m4a",
+   "b": 17160,
+   "ms": 2580,
+   "text": "Quads, then glutes. Done."
+  },
+  "mu2_quads_hamstrings": {
+   "f": "mu2_quads_hamstrings.m4a",
+   "b": 15799,
+   "ms": 2400,
+   "text": "Quads, then hamstrings. Done."
+  },
+  "mu2_quads_calves": {
+   "f": "mu2_quads_calves.m4a",
+   "b": 15023,
+   "ms": 2300,
+   "text": "Quads, then calves. Done."
+  },
+  "mu2_hamstrings_chest": {
+   "f": "mu2_hamstrings_chest.m4a",
+   "b": 13300,
+   "ms": 2010,
+   "text": "Hamstrings, then chest. Done."
+  },
+  "mu2_hamstrings_back": {
+   "f": "mu2_hamstrings_back.m4a",
+   "b": 13759,
+   "ms": 2060,
+   "text": "Hamstrings, then back. Done."
+  },
+  "mu2_hamstrings_delt_side": {
+   "f": "mu2_hamstrings_delt_side.m4a",
+   "b": 14550,
+   "ms": 2210,
+   "text": "Hamstrings, then shoulders. Done."
+  },
+  "mu2_hamstrings_delt_rear": {
+   "f": "mu2_hamstrings_delt_rear.m4a",
+   "b": 14280,
+   "ms": 2120,
+   "text": "Hamstrings, then rear delts. Done."
+  },
+  "mu2_hamstrings_biceps": {
+   "f": "mu2_hamstrings_biceps.m4a",
+   "b": 16098,
+   "ms": 2470,
+   "text": "Hamstrings, then biceps. Done."
+  },
+  "mu2_hamstrings_triceps": {
+   "f": "mu2_hamstrings_triceps.m4a",
+   "b": 16073,
+   "ms": 2470,
+   "text": "Hamstrings, then triceps. Done."
+  },
+  "mu2_hamstrings_forearms": {
+   "f": "mu2_hamstrings_forearms.m4a",
+   "b": 15785,
+   "ms": 2370,
+   "text": "Hamstrings, then forearms. Done."
+  },
+  "mu2_hamstrings_core": {
+   "f": "mu2_hamstrings_core.m4a",
+   "b": 17322,
+   "ms": 2650,
+   "text": "Hamstrings, then abs and core. Done."
+  },
+  "mu2_hamstrings_glutes": {
+   "f": "mu2_hamstrings_glutes.m4a",
+   "b": 14533,
+   "ms": 2220,
+   "text": "Hamstrings, then glutes. Done."
+  },
+  "mu2_hamstrings_quads": {
+   "f": "mu2_hamstrings_quads.m4a",
+   "b": 18648,
+   "ms": 2830,
+   "text": "Hamstrings, then quads. Done."
+  },
+  "mu2_hamstrings_calves": {
+   "f": "mu2_hamstrings_calves.m4a",
+   "b": 16783,
+   "ms": 2520,
+   "text": "Hamstrings, then calves. Done."
+  },
+  "mu2_calves_chest": {
+   "f": "mu2_calves_chest.m4a",
+   "b": 13575,
+   "ms": 2040,
+   "text": "Calves, then chest. Done."
+  },
+  "mu2_calves_back": {
+   "f": "mu2_calves_back.m4a",
+   "b": 12695,
+   "ms": 1860,
+   "text": "Calves, then back. Done."
+  },
+  "mu2_calves_delt_side": {
+   "f": "mu2_calves_delt_side.m4a",
+   "b": 16897,
+   "ms": 2570,
+   "text": "Calves, then shoulders. Done."
+  },
+  "mu2_calves_delt_rear": {
+   "f": "mu2_calves_delt_rear.m4a",
+   "b": 16371,
+   "ms": 2500,
+   "text": "Calves, then rear delts. Done."
+  },
+  "mu2_calves_biceps": {
+   "f": "mu2_calves_biceps.m4a",
+   "b": 17480,
+   "ms": 2680,
+   "text": "Calves, then biceps. Done."
+  },
+  "mu2_calves_triceps": {
+   "f": "mu2_calves_triceps.m4a",
+   "b": 15475,
+   "ms": 2350,
+   "text": "Calves, then triceps. Done."
+  },
+  "mu2_calves_forearms": {
+   "f": "mu2_calves_forearms.m4a",
+   "b": 15856,
+   "ms": 2400,
+   "text": "Calves, then forearms. Done."
+  },
+  "mu2_calves_core": {
+   "f": "mu2_calves_core.m4a",
+   "b": 19528,
+   "ms": 2980,
+   "text": "Calves, then abs and core. Done."
+  },
+  "mu2_calves_glutes": {
+   "f": "mu2_calves_glutes.m4a",
+   "b": 13414,
+   "ms": 2030,
+   "text": "Calves, then glutes. Done."
+  },
+  "mu2_calves_quads": {
+   "f": "mu2_calves_quads.m4a",
+   "b": 13754,
+   "ms": 2060,
+   "text": "Calves, then quads. Done."
+  },
+  "mu2_calves_hamstrings": {
+   "f": "mu2_calves_hamstrings.m4a",
+   "b": 16378,
+   "ms": 2500,
+   "text": "Calves, then hamstrings. Done."
+  }
+ }
+}

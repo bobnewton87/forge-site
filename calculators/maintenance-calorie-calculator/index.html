@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Maintenance Calorie Calculator (TDEE) and Protein Target · Forge</title>
+  <meta name="description" content="Free maintenance calorie calculator. Estimate your daily calorie burn from your size, activity and training, with a protein range. Pounds or kilograms.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/calculators/maintenance-calorie-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/calculators/maintenance-calorie-calculator/">
+  <meta property="og:title" content="Maintenance Calorie Calculator (TDEE) and Protein Target">
+  <meta property="og:description" content="Free maintenance calorie calculator. Estimate your daily calorie burn from your size, activity and training, with a protein range. Pounds or kilograms.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maintenance Calorie Calculator (TDEE) and Protein Target">
+  <meta name="twitter:description" content="Free maintenance calorie calculator. Estimate your daily calorie burn from your size, activity and training, with a protein range. Pounds or kilograms.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/calculators/calc.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forge",
+          "item": "https://forgetrainanywhere.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free calculators",
+          "item": "https://forgetrainanywhere.com/calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Maintenance calorie calculator",
+          "item": "https://forgetrainanywhere.com/calculators/maintenance-calorie-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://forgetrainanywhere.com/calculators/maintenance-calorie-calculator/#app",
+      "name": "Maintenance calorie calculator",
+      "url": "https://forgetrainanywhere.com/calculators/maintenance-calorie-calculator/",
+      "description": "Free maintenance calorie calculator. Estimate your daily calorie burn from your size, activity and training, with a protein range. Pounds or kilograms.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://forgetrainanywhere.com/#org"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" src="/landing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#calc">Skip to the calculator</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/calculators/">Free calculators</a></nav>
+      <a class="cta sm" href="/beta/?via=tools-calories" data-beta-cta>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="t-hero" aria-labelledby="t-title">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Forge</a> <span aria-hidden="true">›</span> <a href="/calculators/">Free calculators</a> <span aria-hidden="true">›</span> <span aria-current="page">Maintenance calorie calculator</span></nav>
+        <p class="kicker">Free tool</p>
+        <h1 id="t-title">Maintenance calorie calculator</h1>
+        <p class="sub">Estimate how many calories you burn in a day from your size, your activity and your training, with a protein range to go with it. For adults.</p>
+      </div>
+    </section>
+
+    <section class="calc" id="calc" aria-label="Maintenance calorie calculator">
+      <div class="wrap calc-in">
+        <div class="tcard">
+          <form data-calc novalidate>
+            <fieldset class="seg"><legend>Units</legend><div class="seg-in"><label><input type="radio" name="u" value="us" checked><span>Pounds and inches</span></label><label><input type="radio" name="u" value="metric"><span>Kilograms and centimetres</span></label></div></fieldset>
+            <fieldset class="seg"><legend>Sex</legend><div class="seg-in"><label><input type="radio" name="sex" value="male" checked><span>Male</span></label><label><input type="radio" name="sex" value="female"><span>Female</span></label></div></fieldset>
+            <div class="f"><label for="age">Age (18 or over)</label><input id="age" name="age" type="number" inputmode="decimal" step="1" min="18" max="110" autocomplete="off"></div>
+            <div class="f"><label for="height">Height</label><input id="height" name="height" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="height-h"><p class="hint" id="height-h">Total height in inches or centimetres, as chosen above (5 ft 10 in is 70 in).</p></div>
+            <div class="f"><label for="weight">Weight</label><input id="weight" name="weight" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="weight-h"><p class="hint" id="weight-h">In the units chosen above.</p></div>
+            <div class="f"><label for="bf">Body fat percent (optional)</label><input id="bf" name="bf" type="number" inputmode="decimal" step="any" min="0" max="60" autocomplete="off" aria-describedby="bf-h"><p class="hint" id="bf-h">Leave blank and Forge estimates it from your height, weight and age. A DXA scan reads in directly; calipers and smart scales tend to read lower.</p></div>
+            <div class="f"><label for="act">Your day, apart from training</label><select id="act" name="act"><option value="desk" selected>Mostly seated (a desk job)</option><option value="light">On my feet some of the day</option><option value="active">On my feet most of the day</option></select></div>
+            <div class="f"><label for="lifts">Lifting sessions a week</label><input id="lifts" name="lifts" type="number" inputmode="decimal" step="1" min="0" max="14" autocomplete="off"></div>
+            <div class="f"><label for="liftmin">Minutes a lifting session</label><input id="liftmin" name="liftmin" type="number" inputmode="decimal" step="5" min="10" max="180" autocomplete="off" value="60"></div>
+            <div class="f"><label for="cardio">Cardio minutes a week</label><input id="cardio" name="cardio" type="number" inputmode="decimal" step="5" min="0" max="1500" autocomplete="off" aria-describedby="cardio-h"><p class="hint" id="cardio-h">Running, cycling and the like, at a moderate effort.</p></div>
+            <div class="acts"><button class="cta" type="submit">Calculate</button></div>
+          </form>
+          <p class="local">Everything runs in your browser. Nothing you type here is sent anywhere or saved.</p>
+        </div>
+        <div class="tcard out" data-out data-empty aria-live="polite" aria-atomic="false">
+          <p class="note">Your answer appears here. It is an estimate for training, not a promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose wrap narrow">
+      <section aria-labelledby="how-h">
+        <h2 id="how-h">How it works</h2>
+        <p>Forge works your resting burn out from your lean mass, which it takes from the body fat you enter or estimates from your height, weight and age. On top of that it adds the burn of an ordinary day (more if you are on your feet), and the extra burn from the training you list.</p>
+        <p>Maintenance is what you would eat to hold your weight steady. A modest amount below it lets weight drift down slowly, a modest amount above it lets it drift up. Forge sets the exact figure in the app from your own numbers.</p>
+        <p>The protein range runs from 0.73 grams per pound of bodyweight (1.6 g per kg), where extra protein stops adding much for most people who lift, to 1.0 g per pound (2.2 g per kg), the top of the range that review found. Lean toward the top if you lift hard, or when you are eating less. If you are well above a weight you would be happy at, base it on a weight nearer that.</p>
+      </section>
+      <section aria-labelledby="src-h">
+        <h2 id="src-h">Where the method comes from</h2>
+        <ul class="refs">
+          <li>Cunningham JJ (1991). Body composition as a determinant of energy expenditure: a synthetic review and a proposed general prediction equation. <i>American Journal of Clinical Nutrition</i> 54:963-969. doi:10.1093/ajcn/54.6.963. Resting burn from lean mass.</li>
+          <li>Tinsley GM, Graybeal AJ, Moore ML (2018). Resting metabolic rate in muscular physique athletes: validity of existing methods and development of new prediction equations. <i>Applied Physiology, Nutrition, and Metabolism</i> 44:397-406. doi:10.1139/apnm-2018-0412. Why the resting range is shown.</li>
+          <li>Westerterp KR (2004). Diet induced thermogenesis. <i>Nutrition &amp; Metabolism</i> 1:5. doi:10.1186/1743-7075-1-5. The cost of digesting food is inside the activity factor.</li>
+          <li>Institute of Medicine (2005). <i>Dietary Reference Intakes for Energy</i>. The physical activity levels the three daily-activity choices follow.</li>
+          <li>Morton RW, et al. (2018). A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. <i>British Journal of Sports Medicine</i> 52:376-384. doi:10.1136/bjsports-2017-097608. The protein range.</li>
+          <li>Deurenberg P, Weststrate JA, Seidell JC (1991). <i>British Journal of Nutrition</i> 65(2):105-114. doi:10.1079/bjn19910073. The body fat estimate when you do not enter one.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">What it cannot tell you</h2>
+        <p>It is an estimate. Published equations disagree by a few hundred calories, and people with a lot of muscle often burn more than they predict. The resting range shows that spread; the real number is yours to find.</p>
+        <p>The best check is your weight over two to three weeks at a steady intake: if it is flat, you are eating about maintenance. Forge does this for you once you log food and weight.</p>
+        <p>It is for training and general fitness, not medical advice and not a weight-loss plan. If you have a health condition, are pregnant, or are under 18, talk to your doctor or dietitian first.</p>
+      </section>
+      <section aria-labelledby="more-h">
+        <h2 id="more-h">More free calculators</h2>
+        <ul class="more">
+          <li><a href="/calculators/body-fat-calculator/">Body fat calculator</a> <span>Estimate body fat from a tape measure, with a likely range.</span></li>
+          <li><a href="/calculators/one-rep-max-calculator/">One-rep max calculator</a> <span>Estimate your 1RM from a hard set, and the weight for 1 to 12 reps.</span></li>
+          <li><a href="/calculators/">All the free calculators</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="band-dark next" aria-labelledby="next-h">
+      <div class="wrap narrow">
+        <p class="kicker">The next step</p>
+        <h2 id="next-h">Calorie and protein targets that follow you</h2>
+        <p class="sub">Forge sets calorie and protein targets from your own numbers, moves them as your weight changes, and plans the training to go with them. Nutrition is optional. A projection, not a promise.</p>
+        <div class="join-acts"><a class="cta" href="/beta/?via=tools-calories" data-beta-cta>Join the beta</a></div>
+        <p class="fine">The beta is on iPhone, through TestFlight. Android is in progress. Not on an iPhone? You can join the launch list on the same page. Your account also works in your browser on a computer or tablet. No email is asked for here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/calculators/">Free calculators</a>
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. These calculators give estimates for training, not a promise. Projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+  <script type="module" src="/calculators/maintenance-calorie-calculator/calc.js"></script>
+</body>
+</html>

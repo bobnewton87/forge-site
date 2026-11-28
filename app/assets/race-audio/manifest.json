@@ -1,0 +1,809 @@
+{
+ "v": 1,
+ "model": "hexgrad/Kokoro-82M",
+ "kbps": 32,
+ "codec": "aac-lc mono 24 kHz m4a",
+ "clips": {
+  "am_adam_go": {
+   "f": "am_adam_go.m4a",
+   "b": 5444,
+   "ms": 455,
+   "text": "Go!",
+   "voice": "am_adam",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_adam_come_on": {
+   "f": "am_adam_come_on.m4a",
+   "b": 5280,
+   "ms": 645,
+   "text": "Come on!",
+   "voice": "am_adam",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_adam_finish": {
+   "f": "am_adam_finish.m4a",
+   "b": 5813,
+   "ms": 835,
+   "text": "Finish strong!",
+   "voice": "am_adam",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_adam_looking": {
+   "f": "am_adam_looking.m4a",
+   "b": 7605,
+   "ms": 795,
+   "text": "Looking good!",
+   "voice": "am_adam",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_adam_pick_up": {
+   "f": "am_adam_pick_up.m4a",
+   "b": 6115,
+   "ms": 645,
+   "text": "Pick it up!",
+   "voice": "am_adam",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_adam_stay": {
+   "f": "am_adam_stay.m4a",
+   "b": 7368,
+   "ms": 885,
+   "text": "Stay with them!",
+   "voice": "am_adam",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_michael_go3": {
+   "f": "am_michael_go3.m4a",
+   "b": 4660,
+   "ms": 815,
+   "text": "Go, go, go!",
+   "voice": "am_michael",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_michael_keep": {
+   "f": "am_michael_keep.m4a",
+   "b": 4572,
+   "ms": 625,
+   "text": "Keep it up!",
+   "voice": "am_michael",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_michael_got_this": {
+   "f": "am_michael_got_this.m4a",
+   "b": 5917,
+   "ms": 905,
+   "text": "You've got this!",
+   "voice": "am_michael",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_michael_hang": {
+   "f": "am_michael_hang.m4a",
+   "b": 6184,
+   "ms": 945,
+   "text": "Hang on, hang on!",
+   "voice": "am_michael",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_michael_lets_go": {
+   "f": "am_michael_lets_go.m4a",
+   "b": 5198,
+   "ms": 705,
+   "text": "Let's go!",
+   "voice": "am_michael",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_michael_kick": {
+   "f": "am_michael_kick.m4a",
+   "b": 3707,
+   "ms": 455,
+   "text": "Kick!",
+   "voice": "am_michael",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_eric_move": {
+   "f": "am_eric_move.m4a",
+   "b": 5214,
+   "ms": 795,
+   "text": "Move, move!",
+   "voice": "am_eric",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_eric_nice": {
+   "f": "am_eric_nice.m4a",
+   "b": 4922,
+   "ms": 875,
+   "text": "Nice running!",
+   "voice": "am_eric",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_eric_go": {
+   "f": "am_eric_go.m4a",
+   "b": 3408,
+   "ms": 555,
+   "text": "Go!",
+   "voice": "am_eric",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_eric_come_on": {
+   "f": "am_eric_come_on.m4a",
+   "b": 4678,
+   "ms": 665,
+   "text": "Come on!",
+   "voice": "am_eric",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_eric_finish": {
+   "f": "am_eric_finish.m4a",
+   "b": 5433,
+   "ms": 885,
+   "text": "Finish strong!",
+   "voice": "am_eric",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_eric_looking": {
+   "f": "am_eric_looking.m4a",
+   "b": 5952,
+   "ms": 825,
+   "text": "Looking good!",
+   "voice": "am_eric",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_onyx_stay": {
+   "f": "am_onyx_stay.m4a",
+   "b": 6498,
+   "ms": 865,
+   "text": "Stay with them!",
+   "voice": "am_onyx",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_onyx_go3": {
+   "f": "am_onyx_go3.m4a",
+   "b": 6078,
+   "ms": 865,
+   "text": "Go, go, go!",
+   "voice": "am_onyx",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_onyx_keep": {
+   "f": "am_onyx_keep.m4a",
+   "b": 5111,
+   "ms": 655,
+   "text": "Keep it up!",
+   "voice": "am_onyx",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_onyx_got_this": {
+   "f": "am_onyx_got_this.m4a",
+   "b": 4959,
+   "ms": 865,
+   "text": "You've got this!",
+   "voice": "am_onyx",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_onyx_hang": {
+   "f": "am_onyx_hang.m4a",
+   "b": 6793,
+   "ms": 1045,
+   "text": "Hang on, hang on!",
+   "voice": "am_onyx",
+   "who": "m",
+   "age": "adult"
+  },
+  "bm_george_kick": {
+   "f": "bm_george_kick.m4a",
+   "b": 4315,
+   "ms": 485,
+   "text": "Kick!",
+   "voice": "bm_george",
+   "who": "m",
+   "age": "adult"
+  },
+  "bm_george_almost": {
+   "f": "bm_george_almost.m4a",
+   "b": 6624,
+   "ms": 1035,
+   "text": "Almost there!",
+   "voice": "bm_george",
+   "who": "m",
+   "age": "adult"
+  },
+  "bm_george_move": {
+   "f": "bm_george_move.m4a",
+   "b": 5302,
+   "ms": 965,
+   "text": "Move, move!",
+   "voice": "bm_george",
+   "who": "m",
+   "age": "adult"
+  },
+  "bm_george_nice": {
+   "f": "bm_george_nice.m4a",
+   "b": 5437,
+   "ms": 995,
+   "text": "Nice running!",
+   "voice": "bm_george",
+   "who": "m",
+   "age": "adult"
+  },
+  "bm_george_come_on": {
+   "f": "bm_george_come_on.m4a",
+   "b": 6599,
+   "ms": 695,
+   "text": "Come on!",
+   "voice": "bm_george",
+   "who": "m",
+   "age": "adult"
+  },
+  "am_puck_looking": {
+   "f": "am_puck_looking.m4a",
+   "b": 4036,
+   "ms": 645,
+   "text": "Looking good!",
+   "voice": "am_puck",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_puck_pick_up": {
+   "f": "am_puck_pick_up.m4a",
+   "b": 5062,
+   "ms": 545,
+   "text": "Pick it up!",
+   "voice": "am_puck",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_puck_stay": {
+   "f": "am_puck_stay.m4a",
+   "b": 5113,
+   "ms": 735,
+   "text": "Stay with them!",
+   "voice": "am_puck",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_puck_push": {
+   "f": "am_puck_push.m4a",
+   "b": 4058,
+   "ms": 475,
+   "text": "Push!",
+   "voice": "am_puck",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_puck_go3": {
+   "f": "am_puck_go3.m4a",
+   "b": 5267,
+   "ms": 715,
+   "text": "Go, go, go!",
+   "voice": "am_puck",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_puck_keep": {
+   "f": "am_puck_keep.m4a",
+   "b": 4586,
+   "ms": 545,
+   "text": "Keep it up!",
+   "voice": "am_puck",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_liam_hang": {
+   "f": "am_liam_hang.m4a",
+   "b": 8023,
+   "ms": 1205,
+   "text": "Hang on, hang on!",
+   "voice": "am_liam",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_liam_lets_go": {
+   "f": "am_liam_lets_go.m4a",
+   "b": 5379,
+   "ms": 755,
+   "text": "Let's go!",
+   "voice": "am_liam",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_liam_almost": {
+   "f": "am_liam_almost.m4a",
+   "b": 6540,
+   "ms": 915,
+   "text": "Almost there!",
+   "voice": "am_liam",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_liam_nice": {
+   "f": "am_liam_nice.m4a",
+   "b": 5326,
+   "ms": 1015,
+   "text": "Nice running!",
+   "voice": "am_liam",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_echo_come_on": {
+   "f": "am_echo_come_on.m4a",
+   "b": 4863,
+   "ms": 655,
+   "text": "Come on!",
+   "voice": "am_echo",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_echo_finish": {
+   "f": "am_echo_finish.m4a",
+   "b": 6103,
+   "ms": 1025,
+   "text": "Finish strong!",
+   "voice": "am_echo",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_echo_looking": {
+   "f": "am_echo_looking.m4a",
+   "b": 6209,
+   "ms": 935,
+   "text": "Looking good!",
+   "voice": "am_echo",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_echo_pick_up": {
+   "f": "am_echo_pick_up.m4a",
+   "b": 5234,
+   "ms": 685,
+   "text": "Pick it up!",
+   "voice": "am_echo",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_echo_stay": {
+   "f": "am_echo_stay.m4a",
+   "b": 6716,
+   "ms": 1015,
+   "text": "Stay with them!",
+   "voice": "am_echo",
+   "who": "m",
+   "age": "teen"
+  },
+  "am_echo_push": {
+   "f": "am_echo_push.m4a",
+   "b": 4752,
+   "ms": 575,
+   "text": "Push!",
+   "voice": "am_echo",
+   "who": "m",
+   "age": "teen"
+  },
+  "af_heart_keep": {
+   "f": "af_heart_keep.m4a",
+   "b": 4931,
+   "ms": 645,
+   "text": "Keep it up!",
+   "voice": "af_heart",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_heart_got_this": {
+   "f": "af_heart_got_this.m4a",
+   "b": 5742,
+   "ms": 835,
+   "text": "You've got this!",
+   "voice": "af_heart",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_heart_hang": {
+   "f": "af_heart_hang.m4a",
+   "b": 6977,
+   "ms": 1005,
+   "text": "Hang on, hang on!",
+   "voice": "af_heart",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_heart_lets_go": {
+   "f": "af_heart_lets_go.m4a",
+   "b": 4186,
+   "ms": 725,
+   "text": "Let's go!",
+   "voice": "af_heart",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_heart_almost": {
+   "f": "af_heart_almost.m4a",
+   "b": 5510,
+   "ms": 795,
+   "text": "Almost there!",
+   "voice": "af_heart",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_bella_nice": {
+   "f": "af_bella_nice.m4a",
+   "b": 6156,
+   "ms": 755,
+   "text": "Nice running!",
+   "voice": "af_bella",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_bella_go": {
+   "f": "af_bella_go.m4a",
+   "b": 3312,
+   "ms": 365,
+   "text": "Go!",
+   "voice": "af_bella",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_bella_come_on": {
+   "f": "af_bella_come_on.m4a",
+   "b": 5100,
+   "ms": 515,
+   "text": "Come on!",
+   "voice": "af_bella",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_bella_finish": {
+   "f": "af_bella_finish.m4a",
+   "b": 5597,
+   "ms": 735,
+   "text": "Finish strong!",
+   "voice": "af_bella",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_bella_looking": {
+   "f": "af_bella_looking.m4a",
+   "b": 6043,
+   "ms": 665,
+   "text": "Looking good!",
+   "voice": "af_bella",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_bella_pick_up": {
+   "f": "af_bella_pick_up.m4a",
+   "b": 7784,
+   "ms": 565,
+   "text": "Pick it up!",
+   "voice": "af_bella",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_nicole_go3": {
+   "f": "af_nicole_go3.m4a",
+   "b": 6982,
+   "ms": 1055,
+   "text": "Go, go, go!",
+   "voice": "af_nicole",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_nicole_keep": {
+   "f": "af_nicole_keep.m4a",
+   "b": 6028,
+   "ms": 805,
+   "text": "Keep it up!",
+   "voice": "af_nicole",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_nicole_got_this": {
+   "f": "af_nicole_got_this.m4a",
+   "b": 6068,
+   "ms": 975,
+   "text": "You've got this!",
+   "voice": "af_nicole",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_nicole_hang": {
+   "f": "af_nicole_hang.m4a",
+   "b": 8445,
+   "ms": 1235,
+   "text": "Hang on, hang on!",
+   "voice": "af_nicole",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_nicole_lets_go": {
+   "f": "af_nicole_lets_go.m4a",
+   "b": 5696,
+   "ms": 775,
+   "text": "Let's go!",
+   "voice": "af_nicole",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sarah_almost": {
+   "f": "af_sarah_almost.m4a",
+   "b": 6203,
+   "ms": 865,
+   "text": "Almost there!",
+   "voice": "af_sarah",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sarah_move": {
+   "f": "af_sarah_move.m4a",
+   "b": 4428,
+   "ms": 765,
+   "text": "Move, move!",
+   "voice": "af_sarah",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sarah_nice": {
+   "f": "af_sarah_nice.m4a",
+   "b": 4567,
+   "ms": 805,
+   "text": "Nice running!",
+   "voice": "af_sarah",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sarah_go": {
+   "f": "af_sarah_go.m4a",
+   "b": 3437,
+   "ms": 525,
+   "text": "Go!",
+   "voice": "af_sarah",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sarah_come_on": {
+   "f": "af_sarah_come_on.m4a",
+   "b": 6162,
+   "ms": 715,
+   "text": "Come on!",
+   "voice": "af_sarah",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sarah_finish": {
+   "f": "af_sarah_finish.m4a",
+   "b": 5569,
+   "ms": 825,
+   "text": "Finish strong!",
+   "voice": "af_sarah",
+   "who": "f",
+   "age": "adult"
+  },
+  "bf_emma_pick_up": {
+   "f": "bf_emma_pick_up.m4a",
+   "b": 5277,
+   "ms": 755,
+   "text": "Pick it up!",
+   "voice": "bf_emma",
+   "who": "f",
+   "age": "adult"
+  },
+  "bf_emma_stay": {
+   "f": "bf_emma_stay.m4a",
+   "b": 6926,
+   "ms": 945,
+   "text": "Stay with them!",
+   "voice": "bf_emma",
+   "who": "f",
+   "age": "adult"
+  },
+  "bf_emma_push": {
+   "f": "bf_emma_push.m4a",
+   "b": 4160,
+   "ms": 595,
+   "text": "Push!",
+   "voice": "bf_emma",
+   "who": "f",
+   "age": "adult"
+  },
+  "bf_emma_go3": {
+   "f": "bf_emma_go3.m4a",
+   "b": 7297,
+   "ms": 995,
+   "text": "Go, go, go!",
+   "voice": "bf_emma",
+   "who": "f",
+   "age": "adult"
+  },
+  "bf_emma_keep": {
+   "f": "bf_emma_keep.m4a",
+   "b": 5729,
+   "ms": 745,
+   "text": "Keep it up!",
+   "voice": "bf_emma",
+   "who": "f",
+   "age": "adult"
+  },
+  "bf_emma_got_this": {
+   "f": "bf_emma_got_this.m4a",
+   "b": 6225,
+   "ms": 945,
+   "text": "You've got this!",
+   "voice": "bf_emma",
+   "who": "f",
+   "age": "adult"
+  },
+  "af_sky_lets_go": {
+   "f": "af_sky_lets_go.m4a",
+   "b": 5015,
+   "ms": 735,
+   "text": "Let's go!",
+   "voice": "af_sky",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_sky_kick": {
+   "f": "af_sky_kick.m4a",
+   "b": 4290,
+   "ms": 525,
+   "text": "Kick!",
+   "voice": "af_sky",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_sky_almost": {
+   "f": "af_sky_almost.m4a",
+   "b": 5875,
+   "ms": 845,
+   "text": "Almost there!",
+   "voice": "af_sky",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_sky_move": {
+   "f": "af_sky_move.m4a",
+   "b": 4918,
+   "ms": 885,
+   "text": "Move, move!",
+   "voice": "af_sky",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_sky_nice": {
+   "f": "af_sky_nice.m4a",
+   "b": 4806,
+   "ms": 895,
+   "text": "Nice running!",
+   "voice": "af_sky",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_sky_go": {
+   "f": "af_sky_go.m4a",
+   "b": 5247,
+   "ms": 565,
+   "text": "Go!",
+   "voice": "af_sky",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_nova_finish": {
+   "f": "af_nova_finish.m4a",
+   "b": 6002,
+   "ms": 925,
+   "text": "Finish strong!",
+   "voice": "af_nova",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_nova_looking": {
+   "f": "af_nova_looking.m4a",
+   "b": 5965,
+   "ms": 895,
+   "text": "Looking good!",
+   "voice": "af_nova",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_nova_pick_up": {
+   "f": "af_nova_pick_up.m4a",
+   "b": 4605,
+   "ms": 635,
+   "text": "Pick it up!",
+   "voice": "af_nova",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_nova_stay": {
+   "f": "af_nova_stay.m4a",
+   "b": 5657,
+   "ms": 855,
+   "text": "Stay with them!",
+   "voice": "af_nova",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_nova_push": {
+   "f": "af_nova_push.m4a",
+   "b": 4550,
+   "ms": 565,
+   "text": "Push!",
+   "voice": "af_nova",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_nova_go3": {
+   "f": "af_nova_go3.m4a",
+   "b": 6722,
+   "ms": 1045,
+   "text": "Go, go, go!",
+   "voice": "af_nova",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_jessica_got_this": {
+   "f": "af_jessica_got_this.m4a",
+   "b": 5687,
+   "ms": 895,
+   "text": "You've got this!",
+   "voice": "af_jessica",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_jessica_hang": {
+   "f": "af_jessica_hang.m4a",
+   "b": 8762,
+   "ms": 1115,
+   "text": "Hang on, hang on!",
+   "voice": "af_jessica",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_jessica_lets_go": {
+   "f": "af_jessica_lets_go.m4a",
+   "b": 5268,
+   "ms": 705,
+   "text": "Let's go!",
+   "voice": "af_jessica",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_jessica_almost": {
+   "f": "af_jessica_almost.m4a",
+   "b": 6131,
+   "ms": 815,
+   "text": "Almost there!",
+   "voice": "af_jessica",
+   "who": "f",
+   "age": "teen"
+  },
+  "af_jessica_move": {
+   "f": "af_jessica_move.m4a",
+   "b": 4552,
+   "ms": 805,
+   "text": "Move, move!",
+   "voice": "af_jessica",
+   "who": "f",
+   "age": "teen"
+  }
+ }
+}

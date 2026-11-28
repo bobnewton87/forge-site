@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Body Fat Calculator from Tape Measurements · Forge</title>
+  <meta name="description" content="Free body fat calculator. Estimate your body fat percentage from a tape measure, your height, weight and age, with a likely range. Inches or centimetres.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/calculators/body-fat-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/calculators/body-fat-calculator/">
+  <meta property="og:title" content="Body Fat Calculator from Tape Measurements">
+  <meta property="og:description" content="Free body fat calculator. Estimate your body fat percentage from a tape measure, your height, weight and age, with a likely range. Inches or centimetres.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Body Fat Calculator from Tape Measurements">
+  <meta name="twitter:description" content="Free body fat calculator. Estimate your body fat percentage from a tape measure, your height, weight and age, with a likely range. Inches or centimetres.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/calculators/calc.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forge",
+          "item": "https://forgetrainanywhere.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free calculators",
+          "item": "https://forgetrainanywhere.com/calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Body fat calculator",
+          "item": "https://forgetrainanywhere.com/calculators/body-fat-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://forgetrainanywhere.com/calculators/body-fat-calculator/#app",
+      "name": "Body fat calculator",
+      "url": "https://forgetrainanywhere.com/calculators/body-fat-calculator/",
+      "description": "Free body fat calculator. Estimate your body fat percentage from a tape measure, your height, weight and age, with a likely range. Inches or centimetres.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://forgetrainanywhere.com/#org"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" src="/landing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#calc">Skip to the calculator</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/calculators/">Free calculators</a></nav>
+      <a class="cta sm" href="/beta/?via=tools-body-fat" data-beta-cta>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="t-hero" aria-labelledby="t-title">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Forge</a> <span aria-hidden="true">›</span> <a href="/calculators/">Free calculators</a> <span aria-hidden="true">›</span> <span aria-current="page">Body fat calculator</span></nav>
+        <p class="kicker">Free tool</p>
+        <h1 id="t-title">Body fat calculator</h1>
+        <p class="sub">Estimate your body fat from a tape measure, your height and your weight. No scan or calipers needed. For adults.</p>
+      </div>
+    </section>
+
+    <section class="calc" id="calc" aria-label="Body fat calculator">
+      <div class="wrap calc-in">
+        <div class="tcard">
+          <form data-calc novalidate>
+            <fieldset class="seg"><legend>Units</legend><div class="seg-in"><label><input type="radio" name="u" value="us" checked><span>Pounds and inches</span></label><label><input type="radio" name="u" value="metric"><span>Kilograms and centimetres</span></label></div></fieldset>
+            <fieldset class="seg"><legend>Sex</legend><div class="seg-in"><label><input type="radio" name="sex" value="male" checked><span>Male</span></label><label><input type="radio" name="sex" value="female"><span>Female</span></label></div></fieldset>
+            <div class="f"><label for="age">Age (18 or over)</label><input id="age" name="age" type="number" inputmode="decimal" step="1" min="18" max="110" autocomplete="off"></div>
+            <div class="f"><label for="height">Height</label><input id="height" name="height" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="height-h"><p class="hint" id="height-h">Total height in inches or centimetres, as chosen above (5 ft 10 in is 70 in).</p></div>
+            <div class="f"><label for="weight">Weight</label><input id="weight" name="weight" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="weight-h"><p class="hint" id="weight-h">In the units chosen above.</p></div>
+            <div class="f" data-for="male"><label for="neck">Neck</label><input id="neck" name="neck" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="neck-h"><p class="hint" id="neck-h">Around the neck, just below the larynx, with the tape level.</p></div>
+            <div class="f"><label for="waist">Waist at the navel</label><input id="waist" name="waist" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="waist-h"><p class="hint" id="waist-h">Around the belly at the level of the navel, relaxed, at the end of a normal breath out.</p></div>
+            <div class="acts"><button class="cta" type="submit">Calculate</button></div>
+          </form>
+          <p class="local">Everything runs in your browser. Nothing you type here is sent anywhere or saved.</p>
+        </div>
+        <div class="tcard out" data-out data-empty aria-live="polite" aria-atomic="false">
+          <p class="note">Your answer appears here. It is an estimate for training, not a promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose wrap narrow">
+      <section aria-labelledby="how-h">
+        <h2 id="how-h">How it works</h2>
+        <p>Forge estimates body fat several ways from the same tape measure and your height, weight and age, puts each on one scale (the one a DXA scan reads), and blends them, giving more weight to the ones that are usually closer.</p>
+        <p>Men get four estimates: a waist and weight equation fitted to DXA scans, the US Navy circumference method, relative fat mass (from your height and waist), and one from your BMI and age. Women get the same, without the Navy method, because it needs the narrowest part of the waist and this page asks for the waist at the navel.</p>
+        <p>Lean mass is your weight less the fat mass. The table shows what each method says by itself, so you can see how far apart they are.</p>
+      </section>
+      <section aria-labelledby="src-h">
+        <h2 id="src-h">Where the method comes from</h2>
+        <ul class="refs">
+          <li>Taylor KM, et al. (2024). One-site Army waist equations referenced to DXA, with the size of each method's offset. doi:10.1002/osp4.747.</li>
+          <li>Hodgdon JA, Beckett MB (1984). The US Navy circumference method for body fat from the neck, waist and height.</li>
+          <li>Woolcott OO, Bergman RN (2018). Relative fat mass (RFM) as a new estimator of whole-body fat percentage. <i>Scientific Reports</i> 8:10980. doi:10.1038/s41598-018-29362-1.</li>
+          <li>Deurenberg P, Weststrate JA, Seidell JC (1991). Body mass index as a measure of body fatness: age- and sex-specific prediction formulas. <i>British Journal of Nutrition</i> 65(2):105-114. doi:10.1079/bjn19910073.</li>
+          <li>Foulis SA, et al. (2023). Navy-type circumference equations read lower than DXA in young recruits. <i>Frontiers in Physiology</i> 14:1183836. doi:10.3389/fphys.2023.1183836.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">What it cannot tell you</h2>
+        <p>It is an estimate based on published research and what you enter. Tape methods are typically within about 3.5 points of a DXA scan, and the likely range shows that; about twice that is possible.</p>
+        <p>Very lean or very muscular people, and people who carry weight in an unusual pattern, can sit well outside it. Tape and weight formulas cannot tell muscle from fat.</p>
+        <p>It is for training and tracking, not a health check or a medical test. The same tape, the same spot and the same time of day matter more than any one reading: watch the trend.</p>
+      </section>
+      <section aria-labelledby="more-h">
+        <h2 id="more-h">More free calculators</h2>
+        <ul class="more">
+          <li><a href="/calculators/maintenance-calorie-calculator/">Maintenance calorie calculator</a> <span>Daily calorie burn from your size, activity and training, plus a protein range.</span></li>
+          <li><a href="/calculators/one-rep-max-calculator/">One-rep max calculator</a> <span>Estimate your 1RM from a hard set, and the weight for 1 to 12 reps.</span></li>
+          <li><a href="/calculators/">All the free calculators</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="band-dark next" aria-labelledby="next-h">
+      <div class="wrap narrow">
+        <p class="kicker">The next step</p>
+        <h2 id="next-h">Keep the trend, and see where it could go</h2>
+        <p class="sub">Forge keeps your tape measurements over time, estimates body fat from them, and shows a 3D body of where your training could take you. A projection, not a promise.</p>
+        <div class="join-acts"><a class="cta" href="/beta/?via=tools-body-fat" data-beta-cta>Join the beta</a></div>
+        <p class="fine">The beta is on iPhone, through TestFlight. Android is in progress. Not on an iPhone? You can join the launch list on the same page. Your account also works in your browser on a computer or tablet. No email is asked for here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/calculators/">Free calculators</a>
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. These calculators give estimates for training, not a promise. Projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+  <script type="module" src="/calculators/body-fat-calculator/calc.js"></script>
+</body>
+</html>

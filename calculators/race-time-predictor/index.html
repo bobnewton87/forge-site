@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Race Time Predictor: 5K, 10K, Half Marathon and Marathon · Forge</title>
+  <meta name="description" content="Free race time predictor. Enter a recent race result and see your predicted mile, 5K, 10K, half marathon and marathon times, each with a likely range.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/calculators/race-time-predictor/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/calculators/race-time-predictor/">
+  <meta property="og:title" content="Race Time Predictor: 5K, 10K, Half Marathon and Marathon">
+  <meta property="og:description" content="Free race time predictor. Enter a recent race result and see your predicted mile, 5K, 10K, half marathon and marathon times, each with a likely range.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Race Time Predictor: 5K, 10K, Half Marathon and Marathon">
+  <meta name="twitter:description" content="Free race time predictor. Enter a recent race result and see your predicted mile, 5K, 10K, half marathon and marathon times, each with a likely range.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/calculators/calc.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forge",
+          "item": "https://forgetrainanywhere.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free calculators",
+          "item": "https://forgetrainanywhere.com/calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Race time predictor",
+          "item": "https://forgetrainanywhere.com/calculators/race-time-predictor/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://forgetrainanywhere.com/calculators/race-time-predictor/#app",
+      "name": "Race time predictor",
+      "url": "https://forgetrainanywhere.com/calculators/race-time-predictor/",
+      "description": "Free race time predictor. Enter a recent race result and see your predicted mile, 5K, 10K, half marathon and marathon times, each with a likely range.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://forgetrainanywhere.com/#org"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" src="/landing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#calc">Skip to the calculator</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/calculators/">Free calculators</a></nav>
+      <a class="cta sm" href="/beta/?via=tools-race-predictor" data-beta-cta>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="t-hero" aria-labelledby="t-title">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Forge</a> <span aria-hidden="true">›</span> <a href="/calculators/">Free calculators</a> <span aria-hidden="true">›</span> <span aria-current="page">Race time predictor</span></nav>
+        <p class="kicker">Free tool</p>
+        <h1 id="t-title">Race time predictor</h1>
+        <p class="sub">Enter a recent race result and see what it suggests for every distance from the mile to the marathon, with a likely range for each.</p>
+      </div>
+    </section>
+
+    <section class="calc" id="calc" aria-label="Race time predictor">
+      <div class="wrap calc-in">
+        <div class="tcard">
+          <form data-calc novalidate>
+            <fieldset class="seg"><legend>Paces per</legend><div class="seg-in"><label><input type="radio" name="u" value="mi" checked><span>Miles</span></label><label><input type="radio" name="u" value="km"><span>Kilometres</span></label></div></fieldset>
+            <div class="f"><label for="dist">Race distance</label><select id="dist" name="dist"><option value="1609.344">Mile</option><option value="3000">3K</option><option value="5000" selected>5K</option><option value="10000">10K</option><option value="15000">15K</option><option value="16093.44">10 miles</option><option value="21097.5">Half marathon</option><option value="42195">Marathon</option><option value="other">Other distance</option></select></div>
+            <div class="f" data-other hidden><label for="other">Distance</label><input id="other" name="other" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="other-h"><p class="hint" id="other-h">In the units chosen above. At least 1,600 m (1 mile).</p></div>
+            <fieldset class="f time"><legend>Finish time</legend><div class="time-in"><label><span>hours</span><input name="TH" type="number" inputmode="numeric" step="1" min="0" max="99" autocomplete="off" aria-describedby="T-h"></label><label><span>minutes</span><input name="TM" type="number" inputmode="numeric" step="1" min="0" max="599" autocomplete="off" aria-describedby="T-h"></label><label><span>seconds</span><input name="TS" type="number" inputmode="numeric" step="any" min="0" max="5999" autocomplete="off" aria-describedby="T-h"></label></div><p class="hint" id="T-h">Your time for that race.</p></fieldset>
+            <div class="f"><label for="long">Longest run in the last 8 weeks (optional)</label><input id="long" name="long" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="long-h"><p class="hint" id="long-h">In the units chosen above. Leave blank if you are not sure: the marathon time is then read cautiously.</p></div>
+            <div class="acts"><button class="cta" type="submit">Calculate</button></div>
+          </form>
+          <p class="local">Everything runs in your browser. Nothing you type here is sent anywhere or saved.</p>
+        </div>
+        <div class="tcard out" data-out data-empty aria-live="polite" aria-atomic="false">
+          <p class="note">Your answer appears here. It is an estimate for training, not a promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose wrap narrow">
+      <section aria-labelledby="how-h">
+        <h2 id="how-h">How it works</h2>
+        <p>Forge fits a curve of the speed a runner can hold for different lengths of time to your result, and reads every other distance off it. It fits a curve of the speed you can hold for different lengths of time to your result, so the answer is only as good as the result you give it: use a recent, all-out race or time trial on a flat road or track, not a hilly, treadmill or easy run.</p>
+        <p>The likely range is Forge's own rule of thumb: about 1 percent either side of the time at the distance of your result, widening as the distance moves away from it (about 2 percent for a half marathon from a 5K, nearly 3 percent for a marathon from a short race). It is a design choice, not a measured chance of landing inside it.</p>
+        <p>A marathon predicted from a shorter race is read cautiously. Many recreational runners finish the marathon slower than their shorter races suggest, so unless you have a marathon on record or a recent long run, Forge adds a few percent to the marathon: 3 percent by default, 1.5 percent if your longest run of the last 8 weeks was 28 km (17.4 miles) or more.</p>
+      </section>
+      <section aria-labelledby="src-h">
+        <h2 id="src-h">Where the method comes from</h2>
+        <ul class="refs">
+          <li>Daniels J, Gilbert J (1979). <i>Oxygen Power: Performance Tables for Distance Runners</i>. The two published equations behind the curve.</li>
+          <li>Vickers AJ, Vertosick EA (2016). An empirical study of race times in recreational endurance runners. <i>BMC Sports Science, Medicine and Rehabilitation</i> 8:26. doi:10.1186/s13102-016-0052-y. The marathon caution.</li>
+          <li>Blythe DAJ, Kir&aacute;ly FJ (2016). Prediction and quantification of individual athletic performance of runners. <i>PLoS ONE</i> 11(6):e0157257. doi:10.1371/journal.pone.0157257. Why runners' own results beat a fixed formula, and why two results beat one.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">What it cannot tell you</h2>
+        <p>A prediction is what your current fitness suggests if you are trained for that distance. It does not know your long runs, your fuelling, the course or the weather, and it is not a promise.</p>
+        <p>The further the distance from your result, the less it says. A 5K result is a good guide to a 10K and a rougher one to a marathon.</p>
+        <p>To see whether a goal time is realistic by race day, Forge Run adds your weeks of training to the same curve; this page shows only where you are now.</p>
+      </section>
+      <section aria-labelledby="more-h">
+        <h2 id="more-h">More free calculators</h2>
+        <ul class="more">
+          <li><a href="/calculators/training-paces-calculator/">Training paces calculator</a> <span>Easy, steady, threshold and race-pace training paces from a recent race.</span></li>
+          <li><a href="/calculators/running-pace-calculator/">Running pace calculator</a> <span>Pace, finish time or distance from any two of the three, with splits.</span></li>
+          <li><a href="/calculators/">All the free calculators</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="band-dark next" aria-labelledby="next-h">
+      <div class="wrap narrow">
+        <p class="kicker">The next step</p>
+        <h2 id="next-h">Check a goal time against the weeks you have</h2>
+        <p class="sub">Forge Run uses the same curve to tell you whether a goal is on track, a stretch or a long shot by race day, always as a range, and builds the plan back from the race.</p>
+        <div class="join-acts"><a class="cta" href="/beta/?via=tools-race-predictor" data-beta-cta>Join the beta</a></div>
+        <p class="fine">The beta is on iPhone, through TestFlight. Android is in progress. Not on an iPhone? You can join the launch list on the same page. Your account also works in your browser on a computer or tablet. No email is asked for here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/calculators/">Free calculators</a>
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. These calculators give estimates for training, not a promise. Projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+  <script type="module" src="/calculators/race-time-predictor/calc.js"></script>
+</body>
+</html>

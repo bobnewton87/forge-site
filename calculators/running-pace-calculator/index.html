@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Running Pace Calculator: Pace, Time and Distance · Forge</title>
+  <meta name="description" content="Free running pace calculator. Find your pace per mile and per kilometre, your finish time or your distance, with a split for every mile or kilometre.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/calculators/running-pace-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:url" content="https://forgetrainanywhere.com/calculators/running-pace-calculator/">
+  <meta property="og:title" content="Running Pace Calculator: Pace, Time and Distance">
+  <meta property="og:description" content="Free running pace calculator. Find your pace per mile and per kilometre, your finish time or your distance, with a split for every mile or kilometre.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Running Pace Calculator: Pace, Time and Distance">
+  <meta name="twitter:description" content="Free running pace calculator. Find your pace per mile and per kilometre, your finish time or your distance, with a split for every mile or kilometre.">
+  <meta name="twitter:image" content="https://forgetrainanywhere.com/img/og.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/calculators/calc.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forge",
+          "item": "https://forgetrainanywhere.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free calculators",
+          "item": "https://forgetrainanywhere.com/calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Running pace calculator",
+          "item": "https://forgetrainanywhere.com/calculators/running-pace-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://forgetrainanywhere.com/calculators/running-pace-calculator/#app",
+      "name": "Running pace calculator",
+      "url": "https://forgetrainanywhere.com/calculators/running-pace-calculator/",
+      "description": "Free running pace calculator. Find your pace per mile and per kilometre, your finish time or your distance, with a split for every mile or kilometre.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://forgetrainanywhere.com/#org"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" src="/landing.js"></script>
+</head>
+<body>
+  <a class="skip" href="#calc">Skip to the calculator</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/calculators/">Free calculators</a></nav>
+      <a class="cta sm" href="/beta/?via=tools-pace" data-beta-cta>Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="t-hero" aria-labelledby="t-title">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Forge</a> <span aria-hidden="true">›</span> <a href="/calculators/">Free calculators</a> <span aria-hidden="true">›</span> <span aria-current="page">Running pace calculator</span></nav>
+        <p class="kicker">Free tool</p>
+        <h1 id="t-title">Running pace calculator</h1>
+        <p class="sub">Pick what you want to find, fill in the other two, and get your pace per mile and per kilometre, your speed, and a split for every mile or kilometre.</p>
+      </div>
+    </section>
+
+    <section class="calc" id="calc" aria-label="Running pace calculator">
+      <div class="wrap calc-in">
+        <div class="tcard">
+          <form data-calc novalidate>
+            <fieldset class="seg"><legend>Find</legend><div class="seg-in"><label><input type="radio" name="mode" value="pace" checked><span>Pace</span></label><label><input type="radio" name="mode" value="time"><span>Finish time</span></label><label><input type="radio" name="mode" value="dist"><span>Distance</span></label></div></fieldset>
+            <fieldset class="seg"><legend>Units</legend><div class="seg-in"><label><input type="radio" name="u" value="mi" checked><span>Miles</span></label><label><input type="radio" name="u" value="km"><span>Kilometres</span></label></div></fieldset>
+            <div class="f" data-for="pace time"><label for="dist">Distance</label><select id="dist" name="dist"><option value="400">400 m</option><option value="800">800 m</option><option value="1500">1500 m</option><option value="1609.344">Mile</option><option value="3000">3K</option><option value="5000" selected>5K</option><option value="10000">10K</option><option value="15000">15K</option><option value="16093.44">10 miles</option><option value="21097.5">Half marathon</option><option value="42195">Marathon</option><option value="other">Other distance</option></select></div>
+            <div class="f" data-other hidden><label for="other">Distance</label><input id="other" name="other" type="number" inputmode="decimal" step="any" min="0" autocomplete="off" aria-describedby="other-h"><p class="hint" id="other-h">In the units chosen above.</p></div>
+            <fieldset class="f time" data-for="pace dist"><legend>Time</legend><div class="time-in"><label><span>hours</span><input name="TH" type="number" inputmode="numeric" step="1" min="0" max="99" autocomplete="off" aria-describedby="T-h"></label><label><span>minutes</span><input name="TM" type="number" inputmode="numeric" step="1" min="0" max="599" autocomplete="off" aria-describedby="T-h"></label><label><span>seconds</span><input name="TS" type="number" inputmode="numeric" step="any" min="0" max="5999" autocomplete="off" aria-describedby="T-h"></label></div><p class="hint" id="T-h">Hours, minutes and seconds. Leave hours blank for a short run.</p></fieldset>
+            <fieldset class="f time" data-for="time dist" hidden><legend>Pace</legend><div class="time-in two"><label><span>minutes</span><input name="PM" type="number" inputmode="numeric" step="1" min="0" max="99" autocomplete="off"></label><label><span>seconds</span><input name="PS" type="number" inputmode="numeric" step="any" min="0" max="599" autocomplete="off"></label></div><p class="hint">Per mile or per kilometre, as chosen above.</p></fieldset>
+            <div class="acts"><button class="cta" type="submit">Calculate</button></div>
+          </form>
+          <p class="local">Everything runs in your browser. Nothing you type here is sent anywhere or saved.</p>
+        </div>
+        <div class="tcard out" data-out data-empty aria-live="polite" aria-atomic="false">
+          <p class="note">Your answer appears here. It is an estimate for training, not a promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose wrap narrow">
+      <section aria-labelledby="how-h">
+        <h2 id="how-h">How it works</h2>
+        <p>Pace is time divided by distance, and speed is distance divided by time. Choose whether to find your pace, your finish time or your distance, enter the other two, and press Calculate.</p>
+        <p>The splits show the clock at the end of every mile or kilometre if you hold the same pace the whole way. A mile is exactly 1,609.344 metres.</p>
+      </section>
+      <section aria-labelledby="src-h">
+        <h2 id="src-h">Where the method comes from</h2>
+        <p>This one is arithmetic, not a model, so there is no estimate and no paper behind it.</p>
+      </section>
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">What it cannot tell you</h2>
+        <p>It assumes one steady pace from start to finish. Real races are not like that: hills, wind, heat, crowds and tiredness change the pace from mile to mile, and most people slow down late in a long race.</p>
+        <p>To see what a race result suggests you could run at other distances, use the <a href="/calculators/race-time-predictor/">race time predictor</a>. For the paces to train at, use the <a href="/calculators/training-paces-calculator/">training paces calculator</a>.</p>
+      </section>
+      <section aria-labelledby="more-h">
+        <h2 id="more-h">More free calculators</h2>
+        <ul class="more">
+          <li><a href="/calculators/training-paces-calculator/">Training paces calculator</a> <span>Easy, steady, threshold and race-pace training paces from a recent race.</span></li>
+          <li><a href="/calculators/race-time-predictor/">Race time predictor</a> <span>What one race result suggests for every other distance, with a likely range.</span></li>
+          <li><a href="/calculators/">All the free calculators</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="band-dark next" aria-labelledby="next-h">
+      <div class="wrap narrow">
+        <p class="kicker">The next step</p>
+        <h2 id="next-h">Plan the runs that get you to that pace</h2>
+        <p class="sub">Forge Run takes your race and your goal time, sets your paces from your results, and builds the weeks from base to race day. It shows a likely range, never a promise.</p>
+        <div class="join-acts"><a class="cta" href="/beta/?via=tools-pace" data-beta-cta>Join the beta</a></div>
+        <p class="fine">The beta is on iPhone, through TestFlight. Android is in progress. Not on an iPhone? You can join the launch list on the same page. Your account also works in your browser on a computer or tablet. No email is asked for here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="/"><img class="mark" src="/icon.svg" alt="" width="28" height="28" loading="lazy"><span>Forge: Train Anywhere</span></a>
+      <nav aria-label="Legal and support">
+        <a href="/calculators/">Free calculators</a>
+        <a href="/#privacy" data-legal="privacy">Privacy</a>
+        <a href="/#terms" data-legal="terms">Terms</a>
+        <a href="mailto:support@forgetrainanywhere.com" data-legal="support">Support</a>
+        <a href="mailto:support@forgetrainanywhere.com">support@forgetrainanywhere.com</a>
+      </nav>
+      <p>Forge is a training and wellness tool, not medical advice. These calculators give estimates for training, not a promise. Projections are estimates, not promises.</p>
+      <p>© 2026 Artificial General Intelligence LLC</p>
+    </div>
+  </footer>
+  <script type="module" src="/calculators/running-pace-calculator/calc.js"></script>
+</body>
+</html>

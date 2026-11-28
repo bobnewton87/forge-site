@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://rxklsjspvwltsixbmqlv.supabase.co https://forge-analytics.robert-h-newton.workers.dev https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Beat my time · Forge: Train Anywhere</title>
+  <meta name="description" content="A friend sent you a race to beat. See the time and the course, then race their ghost in Forge.">
+  <!-- A page people reach from a link a friend sent, not from search: noindex, and not in sitemap.xml (docs/features/loops.md "The page"). The challenge is in the link's
+       fragment (after the #), which a browser never sends to any server: this page reads it on the device and nothing typed or carried in the link leaves it. -->
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="canonical" href="https://forgetrainanywhere.com/beat/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Forge: Train Anywhere">
+  <meta property="og:title" content="Beat my time on Forge">
+  <meta property="og:description" content="Race a friend's ghost on the same course and distance.">
+  <meta property="og:image" content="https://forgetrainanywhere.com/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/landing.css">
+  <link rel="stylesheet" href="/beat/beat.css">
+  <script type="module" src="/track.js"></script>
+  <script type="module" src="/beat/beat.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-in wrap">
+      <a class="brand" href="/" aria-label="Forge: Train Anywhere, home page"><img class="mark" src="/icon.svg" alt="" width="32" height="32"><span>Forge</span></a>
+    </div>
+  </header>
+  <main class="band-dark bb-main">
+    <div class="wrap bb-wrap">
+      <section data-beat="loading" aria-live="polite"><p class="lead">Reading the challenge…</p></section>
+
+      <section data-beat="challenge" hidden aria-live="polite">
+        <div class="bb-card">
+          <div class="bb-fig" data-bb-fig></div>
+          <p class="bb-kick" data-bb-kick></p>
+          <h1 data-bb-title>Beat my time</h1>
+          <dl class="bb-facts">
+            <div><dt data-bb-tlabel>Time to beat</dt><dd data-bb-time class="bb-big"></dd></div>
+            <div><dt>Course</dt><dd data-bb-course></dd></div>
+          </dl>
+          <p class="bb-verdict" data-bb-verdict hidden></p>
+          <div class="bb-pace" data-bb-pace aria-hidden="true"></div>
+          <p class="small bb-note">The line is how the ghost runs: where it is quick and where it eases off.</p>
+        </div>
+        <div class="bb-actions">
+          <p class="bb-have"><strong>Have Forge?</strong> Copy the challenge, open Forge, then More, then Race a challenge, and paste it.</p>
+          <button type="button" class="cta bb-open" data-bb-open>Copy the challenge</button>
+          <p class="small bb-copied" data-bb-copied hidden role="status"></p>
+          <p class="bb-get"><strong>New to Forge?</strong> It is a workout app with a 3D avatar of you, and a running game. It is free to try in the beta. You race the ghost on your own paces.</p>
+          <a class="cta ghost" data-bb-get href="/beta/?via=beat">Get the app</a>
+        </div>
+      </section>
+
+      <section data-beat="invalid" hidden aria-live="polite">
+        <div class="bb-card">
+          <h1>This link did not open</h1>
+          <p class="lead" data-bb-why>It may have been cut short when it was sent.</p>
+          <p>Ask your friend to send it again, or read about Forge below.</p>
+        </div>
+        <div class="bb-actions"><a class="cta" href="/beta/?via=beat">Get the app</a></div>
+      </section>
+
+      <section data-beat="none" hidden>
+        <div class="bb-card">
+          <h1>Beat my time</h1>
+          <p class="lead">A friend can send you a race to beat in Forge: the same course and distance, and their ghost to run against. Open the link they sent you.</p>
+        </div>
+        <div class="bb-actions"><a class="cta" href="/beta/?via=beat">Get the app</a></div>
+      </section>
+
+      <p class="small bb-privacy">What is in a challenge: a time, a course, the pace along it, a few look choices for the runner, and a first name if your friend typed one. Nothing else: no weight, no photo, no account. This page reads it on your device; nothing in the link is sent anywhere.</p>
+    </div>
+  </main>
+</body>
+</html>

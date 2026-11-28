@@ -1,0 +1,103 @@
+/* The free tools (docs/features/site-tools.md): a calculator card, its answer, and the explanation under it. Loaded after landing.css, so it uses the site's
+   tokens (light and dark follow the device; the nav and the closing band stay dark). Phone first: one column at 390 px, two from 900 px. Every control is 44 px tall. */
+.t-hero { padding: 36px 0 8px; }
+.t-hero h1 { font-size: clamp(34px, 8.6vw, 56px); line-height: 1.04; margin-top: 4px; }
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 6px; margin-bottom: 18px; font-size: 14px; color: var(--muted); }
+.crumbs a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 2px; color: var(--muted); font-weight: 600; }
+.crumbs a:hover { color: var(--ink); }
+.crumbs [aria-current] { color: var(--text); font-weight: 650; }
+
+.calc { padding: 22px 0 44px; }
+.calc-in { display: grid; gap: 18px; }
+.tcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 22px 20px; box-shadow: 0 16px 40px -28px rgba(40, 20, 0, .35); min-width: 0; }
+@media (prefers-color-scheme: dark) { .tcard { box-shadow: none; } }
+
+/* ---------------------------------------------------------------- the form */
+form[data-calc] fieldset { border: 0; padding: 0; min-width: 0; }
+form[data-calc] > * + * { margin-top: 16px; }
+form[data-calc] legend, form[data-calc] label { font-weight: 650; font-size: 15.5px; }
+form[data-calc] legend { padding: 0; margin-bottom: 6px; }
+.f { display: block; }
+.f > label { display: block; margin-bottom: 6px; }
+input[type="number"], select {
+  width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); color: var(--text);
+  font: inherit; font-size: 17px; font-variant-numeric: tabular-nums; -webkit-appearance: none; appearance: none;
+}
+select { padding-right: 38px; background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 20px) 21px, calc(100% - 14px) 21px; background-size: 6px 6px; background-repeat: no-repeat; }
+input[type="number"]:focus-visible, select:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.hint { margin-top: 6px; color: var(--muted); font-size: 13.5px; line-height: 1.45; }
+.time-in { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.time-in.two { grid-template-columns: repeat(2, 1fr); }
+.time-in label { font-weight: 500 !important; font-size: 13.5px !important; color: var(--muted); }
+.time-in label span { display: block; margin-bottom: 4px; }
+.seg-in { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); }
+.seg-in label { position: relative; flex: 1 1 auto; font-weight: 650; }
+.seg-in input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.seg-in span { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; border-radius: 999px; text-align: center; color: var(--muted); font-size: 15.5px; }
+.seg-in input:checked + span { background: linear-gradient(135deg, var(--accent2) -20%, var(--accent) 70%); color: var(--on-accent); font-weight: 800; }
+.seg-in input:focus-visible + span { outline: 3px solid var(--ring); outline-offset: 2px; }
+.acts { margin-top: 22px; }
+.acts .cta { width: 100%; }
+.local { margin-top: 14px; color: var(--muted); font-size: 13.5px; line-height: 1.5; }
+
+/* ---------------------------------------------------------------- the answer */
+.out { align-self: start; }
+.out[data-empty] .note { color: var(--muted); }
+.out > * + * { margin-top: 18px; }
+.ans-k { color: var(--ink); font-weight: 750; font-size: 13.5px; letter-spacing: .08em; text-transform: uppercase; }
+.ans-v { margin-top: 4px; font-size: clamp(36px, 10vw, 54px); line-height: 1.05; font-weight: 850; letter-spacing: -.035em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.ans-s { margin-top: 6px; color: var(--muted); font-size: 15.5px; }
+.out h2 { font-size: 19px; letter-spacing: -.015em; line-height: 1.25; }
+.note { color: var(--muted); font-size: 14.5px; line-height: 1.5; }
+.oops { color: var(--err); font-weight: 650; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; }
+.tbl:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.tbl table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.tbl th, .tbl td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl tr:last-child > * { border-bottom: 0; }
+.tbl thead th { color: var(--muted); font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; background: var(--bg2); }
+.tbl tbody th { font-weight: 700; }
+.tbl td { white-space: nowrap; }
+.tbl tbody th small { display: block; margin-top: 2px; color: var(--muted); font-size: 13px; font-weight: 400; line-height: 1.4; }
+.tbl tbody th b { font-weight: 700; }
+.tbl tbody th:first-child { min-width: 8em; }
+@media (max-width: 520px) { .tbl table { font-size: 14px; } .tbl th, .tbl td { padding: 9px 8px; } .tbl thead th { font-size: 11.5px; letter-spacing: .03em; } .tcard { padding: 20px 16px; } }
+.tbl tr.you > * { background: var(--tint); }
+
+/* ---------------------------------------------------------------- the words under it */
+.prose { padding: 20px 20px 8px; }
+.prose section { margin-top: 36px; }
+.prose h2 { font-size: clamp(24px, 5.6vw, 32px); line-height: 1.12; letter-spacing: -.028em; }
+.prose p, .prose li { color: var(--text); }
+.prose p { margin-top: 12px; max-width: 42em; }
+.prose a { font-weight: 600; }
+.refs { margin: 12px 0 0 1.2em; max-width: 44em; }
+.refs li { margin-top: 10px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+.more { list-style: none; margin-top: 8px; }
+.more li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.more li:last-child { border-bottom: 0; }
+.more li span { display: block; color: var(--muted); font-size: 14.5px; }
+.more a { display: inline-flex; align-items: center; min-height: 44px; }
+.next { padding: 64px 0 72px; margin-top: 36px; }
+.next h2 { font-size: clamp(28px, 6.4vw, 42px); line-height: 1.08; margin-top: 4px; }
+.next .join-acts { margin-top: 24px; }
+.next .fine { max-width: 36em; }
+
+/* ---------------------------------------------------------------- the index */
+.tool-list { list-style: none; display: grid; gap: 12px; margin-top: 8px; }
+.tool-card { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); color: var(--text); text-decoration: none; }
+.tool-card:hover { border-color: var(--tint-line); background: var(--tint); }
+.tool-card .ic { flex: none; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; background: var(--tint); font-size: 22px; }
+.tool-card .tc { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tool-card b { font-size: 18px; letter-spacing: -.015em; }
+.tool-card .tc span { color: var(--muted); font-size: 14.5px; line-height: 1.4; }
+
+@media (min-width: 900px) {
+  .t-hero { padding-top: 56px; }
+  .calc-in { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  .tcard { padding: 28px 28px; }
+  .out { position: sticky; top: 88px; }
+  .acts .cta { width: auto; min-width: 220px; }
+  .tool-list { grid-template-columns: 1fr 1fr; }
+}
